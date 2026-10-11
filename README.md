@@ -24,6 +24,10 @@ Deliverables are in `out/final/` (see the latest commit message for the exact fi
 - **Research** (`research/`): reference teardown, brand study, sourcing reports, storyboards and the final bible
   (`research/STORYBOARD.md`).
 
+## Logo animation for the website
+`logo-animation/`: a 1.8 s intro of the Solaro logo for page load, as Lottie (`solaro-logo.json`, `solaro-mark.json`) and MP4,
+built from the same SVG paths. Embed snippets and rebuild steps are in `logo-animation/README.md`.
+
 ## Render
 ```
 npm install                      # three, opentype.js

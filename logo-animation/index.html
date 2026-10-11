@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solaro logo animation</title>
+<!-- Preview: serve this folder (e.g. `npx serve logo-animation`) and open it; lottie-web needs http(s) to load the JSON. -->
+<style>
+  body { margin: 0; font: 15px/1.5 Poppins, system-ui, sans-serif; color: #1C1C1C; background: #FFFFFF; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid #F3F3F3; }
+  .logo { display: block; width: 180px; aspect-ratio: 1866 / 449; }
+  main { max-width: 960px; margin: 0 auto; padding: 48px 16px; display: grid; gap: 48px; }
+  .hero { width: min(720px, 100%); aspect-ratio: 1866 / 449; margin: 0 auto; }
+  .mark { width: 160px; aspect-ratio: 1; margin: 0 auto; }
+  video { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+  button { font: inherit; padding: 8px 16px; border: 0; border-radius: 5px; background: #FF5E2B; color: #FFFFFF; cursor: pointer; }
+  button:hover { background: #EC5727; }
+  h2 { font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: #838383; margin: 0 0 12px; }
+</style>
+</head>
+<body>
+<header>
+  <a href="#" class="logo" data-lottie="solaro-logo.json" aria-label="Solaro"></a>
+  <button type="button" id="replay">Prehrať znova</button>
+</header>
+<main>
+  <section><h2>Lottie, lockup</h2><div class="hero" data-lottie="solaro-logo.json" role="img" aria-label="Solaro"></div></section>
+  <section><h2>Lottie, mark only</h2><div class="mark" data-lottie="solaro-mark.json" role="img" aria-label="Solaro"></div></section>
+  <section><h2>MP4</h2><video src="solaro-logo.mp4" autoplay muted playsinline aria-label="Solaro"></video></section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/lottie-web@5.13.0/build/player/lottie_light.min.js"></script>
+<script>
+  // Play once on page load and hold the last frame. With reduced motion, show the finished logo straight away.
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const anims = [...document.querySelectorAll('[data-lottie]')].map((el) => {
+    const anim = lottie.loadAnimation({ container: el, renderer: 'svg', loop: false, autoplay: !reduce, path: el.dataset.lottie });
+    if (reduce) anim.addEventListener('DOMLoaded', () => anim.goToAndStop(anim.totalFrames - 1, true));
+    return anim;
+  });
+  document.getElementById('replay').addEventListener('click', () => {
+    anims.forEach((a) => a.goToAndPlay(0, true));
+    const v = document.querySelector('video'); v.currentTime = 0; v.play();
+  });
+</script>
+</body>
+</html>
