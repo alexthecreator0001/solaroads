@@ -1,0 +1,13 @@
+node_modules/
+assets/raw/
+research/reference/reference.mp4
+research/reference/frames/
+out/frames/
+out/tmp/
+*.pyc
+__pycache__/
+tools/models/
+out/
+assets/processed/
+research/reference/audio.wav
+fonts/_test/

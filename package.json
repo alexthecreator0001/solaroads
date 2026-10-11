@@ -1,0 +1,15 @@
+{
+  "name": "solaro-ad",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Solaro 15s vertical ad — evolution of electricity from first spark to solar. Deterministic HTML/Canvas renderer.",
+  "type": "module",
+  "scripts": {
+    "render": "node tools/render.mjs",
+    "preview": "node tools/serve.mjs"
+  },
+  "dependencies": {
+    "opentype.js": "^1.3.4",
+    "three": "^0.170.0"
+  }
+}
