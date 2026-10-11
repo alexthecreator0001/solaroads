@@ -134,7 +134,7 @@ async function main() {
     fs.mkdirSync(path.dirname(out), { recursive: true });
     const workers = Math.max(1, Math.min(Number(args.workers || 2), Math.ceil(frames.length / 30)));
     // split into contiguous chunks, each encoded separately (lossless intermediate), then concatenated
-    const tmpDir = path.join(ROOT, 'out', 'tmp');
+    const tmpDir = path.join(ROOT, 'out', 'tmp', String(process.pid));
     fs.mkdirSync(tmpDir, { recursive: true });
     const chunk = Math.ceil(frames.length / workers);
     let done = 0;
