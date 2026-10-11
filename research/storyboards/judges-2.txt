@@ -1,0 +1,272 @@
+
+            "from": "A-continuity",
+            "idea": "Keep the client roof photo masked inside the cells while the 6x10 grid merges into 2x2 and the radii and holes grow into the mark shapes. Then snap the photos to orange one shape per frame (ring, tile, pin, leaf), each with a pitched pop. The client's work stays on screen longer, and the end gets a staccato before the gap breathes.",
+            "frames": "A I7-I8 f670-707 -> B #130-#131 f702-729"
+          },
+          {
+            "from": "B-editorial",
+            "idea": "Lockup word morph slnko -> Solaro using only safe operations. s->S is a single-contour makeMorph. l and o glide. n and k collapse to orange dots, slide to their slots and grow into the orange wordmark a and r, and a new dot grows into o1. Everything snaps to ink in 1 frame on the add9 chord. No outline-to-outline morph between unrelated letters.",
+            "frames": "f736-768 (#133-#136)"
+          },
+          {
+            "from": "A-continuity",
+            "idea": "As the final 'o' lands, the mark's ring cell pulses +6% (E.punch 6 f), so the viewer reads mark ring = wordmark o (and pin = a).",
+            "frames": "A J4 f778-785 -> B #134 f752-763"
+          },
+          {
+            "from": "C-typographic",
+            "idea": "Optional text-morph upgrade for the fire beat: 'plameň' whose orange 'a' ignites (a clip-wipe fill from the baseline up), then lifts off as the flame (wordmark a -> pin through a near-identity makeMorph, then a mixCell rotate to -135° and grow). Use it in place of B's flame born from a point plus the oheň caption. Measure the IoU of a vs pin first.",
+            "frames": "C S22-S24 f124-155 -> B #24-#25 f138-149 and drop B #33-#37 caption"
+          },
+          {
+            "from": "A-continuity",
+            "idea": "Build-process idea, not a shot: render a registration sheet before animating, with frame 0 of every shot shown under a crosshair at A and reference circles (r 130/210/420), and store every anchor as a fraction of the raw file plus a trim-box sidecar. This is the biggest single quality lever for about 40-80 registered images.",
+            "frames": "applies to all montage sections"
+          }
+        ],
+        "recommendation": "I recommend B-editorial as the backbone (score 8). Under the motion-craft lens it is the only board that looks like Solaro's own film rather than the reference re-coloured. The mark becomes the layout grid (2x2 windows, quarter-round splits, a full-bleed sequencer, the bolt turned into a gutter and then a grid, a disc window, the panel), while the reference's engine stays underneath: in-place swaps, morphs through a point, ratio push, stepped zoom and a 2 f accelerando. It is also the fastest and the most exact. I checked its pacing against its own shot tables (/home/user/solaroads/research/storyboards/B-editorial.md): 136 shots, median 4 f, 19 two-frame shots against the reference's 25, and a peak of 13 cuts per 0.5 s against 15. Most of its transitions swap a fill inside an identical outline. I also checked its ✦ against engine/shapes.js: sparkPath and markCells at gap 0 match exactly.\n\nRequired fixes before the build:\n1. **Add real 3D.**\n   - Put live GLB flints in the opening windows (C S07-S08 / proto_strike).\n   - Make the flip wave lit, extruded 3D (A I3).\n   - Replace the stepped zoom during the flip with a continuous log zoom.\n2. **Replace the caption beats with morphs.**\n   - Fire to lightning: C's flame -> orange l -> constant-width bolt (S35-S38). This also removes the taper-to-band pop at f245.\n   - Light: A's 'svet.' -> 'svetlo' -> push-through into the bulb (F1-F7).\n   - Optionally, C's 'plameň' a -> flame.\n3. **Use A's Night Earth orbit** to draw the sun ring (G14), and A's or C's registered Scheiner -> round-cell bridge before the ring docks as the o of slnko.\n4. **End with A's photos-in-the-mark and per-frame orange snap** (I7-I8), and add the ring pulse as the final o lands (J4).\n5. **Re-shape the cut curve.**\n   - Cut the 120 f hold to about 75-90 f; the reference holds for 71 f.\n   - Spend the frames saved on the 3D beats.\n   - Dig 2-3 real valleys (≤1 cut per 0.5 s) at the word beats.\n   - Cap the bulb strobe at 2-3 alternations.\n   - Keep the sun flurry peak at 13-15 cuts per 0.5 s.\n\nAvoid three things:\n- **A's montage grammar.** The dot-on-centred-cut-out plus the comet with an ink trail reads as a reskin. If any DOT<->✦ swap survives, morph it or pass it through a point; the 'pixel-identical at R=17' claim is wrong (the ✦ covers about 27% of the dot).\n- **C's cursor, backspace, blinking end card and Light->Bold surge.** These are borrowed from the reference and carry its AI-chat meaning.\n- **C's 44-cell mosaic wave.** It looks like a stock template.\n\nEvery glyph<->cell or glyph<->glyph makeMorph that survives the synthesis (ring->o, s->S, n->r, a->pin) needs an IoU and start-point check, rendered at 4 sub-frames before sign-off. Fall back to the dimension-matched hard swap if any of them wobbles."
+      },
+      {
+        "scores": [
+          {
+            "board": "A-continuity",
+            "score": 8,
+            "why": "This is the most buildable board, and it is specified most precisely. All 88 referenced paths exist (checked with ls). Placement is given as scale per raw pixel (s) against the raw files, and A is the only board that flags the trim-box problem. That problem is real: the processed .cut.png files are trimmed and downscaled (for example handaxe-teardrop.cut is 722x1292 against a 2805x4000 raw), so hot-spot fractions shift. About 75 of A's 104 shots run on one mechanism, the anchored montage under the orange element at A; the engine already has drawAnchored and seq.montage. The open reuses proto_open almost verbatim, and I7 to J reuse proto_end. The 3D strike is proto_strike, which already renders the B&W stones well (out/proto_strike-01.jpg). Text morphs are additive and exact: svet. → svetlo (a comet draws the l, the head inflates into the o), and solár → Solaro (pop, accent retract, s→S). Every risky step has a stated fallback: 2D flip, PNG stones, a scale swap if s→S twists. I checked the Bardejov hot spot (0.374, 0.276) on the Black Marble image and it lands in the Carpathian basin, so it is plausible. Its upscales are mild; the worst is HB1 Scheiner at s1.46 of the raw for 6 f. My realistic estimate is about 14 h, against the claimed 1 day. The main exposure is creative rather than technical: a dot over an anchored montage for about 4 s risks reading as the reference re-skinned.",
+            "fatal_flaws": [
+              "Nothing blocks the build.",
+              "C9 (f108-123), flame in the hand-axe: a symmetric pin cell (sy 1.54) cannot leave a uniform ~10 px rim inside an irregular flaked silhouette. The rim will vary from about 0 to 25 px and look sloppy. Fix: clip the flame to the cutout alpha eroded by 10 px, or put the flame in front of the axe as a shape rhyme (C S26 / B #30).",
+              "I3 (f614-639), 3D panel with B&W photos on the cell backs: per-cell UVs plus a lit-to-unlit hand-off into I4 (the photos must match pixel-for-pixel, with toneMapped:false). This is the costliest mechanism (about 2-3 h). B's photo-front, orange-back flip is simpler and hands off on flat orange.",
+              "'solár' (J2-J4) is colloquial and needs client sign-off. The fallback in §6 is weaker.",
+              "Missing processing: there is no cutout for handaxes-nine-bifaces (C8; the raw has a dark museum backdrop and painted inventory numbers) or for sundial-universal-ring-flat (H11; grey ground), and the pylon needs a sky key (G11).",
+              "B1 points at the 23 MB Draco GLBs and plans a decimation step, but assets/3d/flint-0370-lite.glb and flint-0373-lite.glb already exist and proto_strike uses them.",
+              "E2 P3 (f213-217): an orange trace over the real Spokane bolt channel looks cheap if the 12 hand-placed points drift off the channel. It needs onion-skin registration."
+            ]
+          },
+          {
+            "board": "B-editorial",
+            "score": 6.5,
+            "why": "All 85 paths exist. Its core mechanism, an image clipped to any cell or path in cov or reg mode, is already in engine/window.js, and several of its ideas are both cheap and exactly correct: (1) stone-filled mark cells slam shut, and the exact negative-space ✦ ignites, with no 3D needed; (2) the bulb-window strobe, where only the fill changes inside an identical outline, so morph error is zero; (3) the push through the o's counter as an analytic iris over a static screen-space Tatras photo; (4) the Tatras roof is gridCut into 6x10 windows, flipped in unlit 3D to orange, then fed into proto_end. Hand-off (4) happens on flat orange, so it is trivial to match. Feasibility suffers from breadth: 7 layout families (M2, M2F, SPLIT, FIELD, DW, BOLT, PANEL), and the f240-329 lightning-split and M2F-sequencer stretch is the most choreography-dense and least proven section on any board. Several placements also exceed the resolution we have: processed files are capped at 2400 px, and the NASA bolts are 1280x1024 raw. My realistic estimate is about 17 h, against the claimed 12.5 h. It uses only one client photo.",
+            "fatal_flaws": [
+              "#76 (f422-425): the step zoom-out shows the 'whole sheet' of the Edison catalogue poster, including the 'EDISON LAMPS / GENERAL ELECTRIC COMPANY' title. That breaks the no-text policy, plus a third-party brand on screen. It needs A's crop of y >= 0.24.",
+              "Upscales: #42 and #44 cover-fit a 634x1920 half-frame from 1280x1024 NASA bolts x1.3, about 2.4x, and inverted night photos go mushy. #90 Tesla patent at w 520% is 2.4x the raw (3.4x the processed file). #89 Stanley at w 360% is 1.7x the raw. #32 Prometheus at w 260% is 1.7x the raw (2.5x the processed file).",
+              "#40 (f245), bolt split: moving the L and R regions horizontally by ±d gives a gutter whose perpendicular width varies with segment angle (2d·cosθ). It will not match the 34 px taperStroke, which also tapers at its ends, so the claimed 'nothing pops' hand-off will pop unless the band is drawn as a true offset polygon.",
+              "#33-34: Roman oil lamps rotated 180° so they hang under the flame. Lamps are recognisable objects, and upside-down they read as a mistake.",
+              "#22: handaxes-nine-bifaces is tagged [cut], but no cutout exists (dark backdrop). The pylon [cut] (#84) does not exist either.",
+              "f240-329 packs bolt draw, invert, split, 6 swaps, straightening, a gutter opening, rect→cell and a 3-frame 4-window sequencer with wires into 90 frames. That is the highest cheap-if-imperfect exposure on any board and the hardest to debug.",
+              "The ıskra dotless-ı tittle (f72-131) is the reference's own 'think' device, so the board risks reading as a copy."
+            ]
+          },
+          {
+            "board": "C-typographic",
+            "score": 5,
+            "why": "All 87 paths exist, and the lite GLBs it names are real. C reuses proto_strike exactly, which is the lowest-risk 3D on any board. The concept is the most brand-ownable: the l is the bolt, the a is the flame and bulb, the o is the sun, and the hot letters lift off to assemble the mark. Under a feasibility lens, though, it carries the most bespoke morph code and the most places where an imperfect morph will look cheap: the k split, stem → l, the Light→Bold weight surge, n→r, s→S, a↔pin, o↔ring, the letter lift-off, and cursor typing and backspacing. Each needs per-beat tuning, and the brief demands 'every morph perfect'. New tools are needed that the engine does not have (splitGlyph, offsetCell, cellToRings, a centre-aligned typing kit). I also found verifiable errors in the data. My realistic estimate is about 20 h, against the claimed 9 h.",
+            "fatal_flaws": [
+              "S68 (f372-383): the Slovakia hot spot (≈0.66, 0.29) on the Black Marble image lands in Central Asia (Tian Shan), checked by overlaying both boards' points on the image. Slovakia is near (0.37, 0.28), so the 'world becomes the dot on Slovakia' beat is mis-registered, and the globe composition changes once it is fixed.",
+              "S105→S106 (f647/648), the hero pull-back out of the o: the 'same photo, same scale' claim does not hold. A full-bleed cover of the 1645x2200 processed Tatras is about 0.87; cover-fitting the 2408x2536 px counter box at x40 is about 1.15, so there is a ~1.3x jump at the cut. At x1 the photo would also be 1/40 of its f648 size (about 36x48 px), smaller than the 60x63 px counter, which leaves white corners. B's screen-space iris solves this.",
+              "S58 (f324-339), Tesla flipbook: each ring figure is about 230 raw px across. Showing it at Ø520 is a 2.3x upscale of the raw (2.9x of the processed file) held for 16 f, and each figure carries 'fig: Nª' script plus C, C', R, N, S letters about 100 px tall on screen. That needs potrace plus retouching on 8 figures, otherwise it breaks the no-text rule and looks soft.",
+              "S73 (f410-416), Light→Bold surge: the board says s, v, e, t are one contour each, but the e has a counter. Same-glyph makeMorph between weights can still wobble at the start points. Lexend's variable axis would be cleaner, but it is not the brand face.",
+              "S108: n→r is an outline morph between different glyphs (the shoulder becomes an ear), which is exactly the blob risk the brief forbids. It should drop to a point and grow from one instead.",
+              "S82 (f462-485), 3D ring turn: a generic 'logo spin' that is a near-copy of the reference's 24 f quart-out 3D bloom with a cool contact shadow. 'Shading off' at f485, followed by the 2D swap at f486, will pop unless the 3D is rendered unlit with toneMapping off at landing.",
+              "S98 (f564-572): the stepped zoom-out of the Scheiner 1612 plate exposes Latin text blocks and handwritten numbers, and retouching is not mentioned. S14 uses the nine bifaces as [ph], leaving a dark museum backdrop (not light mode). S27 inverts the NASA candle flame into a dark smudge around the orange flame.",
+              "S110 (f744-767): ring and pin fly along Béziers while tile and leaf grow, the gap breathes and the word rescales, all in 24 f. This replaces the already-built proto_end with new, untested choreography."
+            ]
+          }
+        ],
+        "best_ideas_to_graft": [
+          {
+            "from": "B-editorial",
+            "idea": "Bulb-window strobe. The orange bulb outline (pin rotated +45°) alternates between orange and a registered Edison image every 3 f, so only the fill changes and there is zero morph error. Graft it over A's G1-G5 bulb run, using the same Edison files (raw, glass radius registered to the pin circle). It lands ON at the switch clunk. Flash safety: about 4% of screen area, so it stays under the 25% threshold.",
+            "frames": "B f330-371 → replaces A G1-G5 (f360-387)"
+          },
+          {
+            "from": "B-editorial",
+            "idea": "Push through a counter as an analytic iris onto a static screen-space Tatras photo. The camera scales the Path2D (x32, log quadIn, zoom blur), so the photo never rescales and nothing can jump. In A, run it through the sun ring's hole (r 215.5), or through the o of 'slnko' if the T2 copy changes. It replaces C's broken pull-back.",
+            "frames": "B f612-653 → A after H23/HB (≈ f571-600)"
+          },
+          {
+            "from": "B-editorial",
+            "idea": "Client roof becomes the panel. White score lines are drawn on the full-bleed Tatras roof, gridCut cuts it into 6x10 (at p=0 the tiling is invisible), then an unlit 3D flip wave turns each cell from its photo tile (front) to orange (back, one screen-space gradient) with stepped zoom-outs. Because the flat-orange 3D frame matches 2D drawCellsShared exactly, it can then go straight into proto_end. It is cheaper and safer than A's I3 photo-back-face flip and its lit-to-unlit hand-off.",
+            "frames": "B f648-701 → replaces A I1-I6 (f593-669), then A I7-J (proto_end)"
+          },
+          {
+            "from": "C-typographic",
+            "idea": "Suns become solar cells. A Scheiner stepped zoom (text retouched) cuts to the Tekniska round-cell module, rotated +12°. The DOT grows into an orange ring cell sitting exactly on one round PV cell (they really are white rings), then the ring squares off on a Fraunhofer square cell (radii R → 0.1164 C, the mark's own ratio). It is a stronger, exact version of A's HB1-HB4/I1.",
+            "frames": "C f564-587 → A HB1-I1 (f571-599)"
+          },
+          {
+            "from": "B-editorial",
+            "idea": "An open/strike variant with no 3D. Stepped zoom on the mark, its four cells become windows full of flint, the gap slams to 0, and the exact negative-space ✦ ignites orange (sparkPath(A, C/2) equals the hole), then 2 f invert and sparks. Use it if A's B1-B3 (proto_strike) has to be cut for time. Otherwise keep proto_strike, which already works.",
+            "frames": "B f28-57 (alternative to A f24-71)"
+          },
+          {
+            "from": "A-continuity",
+            "idea": "svet. → svetlo. The dot rests after 'svet' as a full stop, flies up as a comet drawing the Poppins l (a rectangle), arcs over and inflates into the orange o (circle → ring, hole ratio 0.479), then pushes through into the bulb. Every op is additive and exact. It is the lowest-risk text morph across all three boards and natively Slovak. Keep it in the backbone.",
+            "frames": "A f300-359"
+          },
+          {
+            "from": "A-continuity",
+            "idea": "Night Earth into the sun ring. The dot marks Bardejov at (0.374, 0.276), a correct registration (C's point lands in Central Asia). The globe pulls out, the dot orbits the limb drawing an orange stroke, and the stroke thickens into the RING with its inner edge locked to the limb at the logo's 0.479 proportion. Night then cuts to day inside the hole. Keep it, but fit the limb circle from pixels, not by eye.",
+            "frames": "A f439-479"
+          },
+          {
+            "from": "C-typographic",
+            "idea": "Offset keyline K: an exact parallel offset of the hot shape (w/h + 2d, every radius + d), drawn as a 4 px ink line on the persistent flame during the fire montage. It is cheap, mathematically clean paint-on that answers the brief's 'paint elements on top of the images' without brush textures.",
+            "frames": "C f156-213 → A D1-D10 (f124-183)"
+          },
+          {
+            "from": "B-editorial",
+            "idea": "T2 as 'slnko → Solaro' instead of A's 'solár → Solaro'. Shared letters glide, s→S is the only outline morph, the n and k drop to dots and the dots grow into a and r, and a new o grows from a dot. It avoids the colloquial 'solár' sign-off, and brand.md already proposes it. Fallback: proto_end's plain wordmark slide-out, which is already built.",
+            "frames": "B f736-767 → A J2-J4 (f730-785)"
+          },
+          {
+            "from": "C-typographic",
+            "idea": "Optional, high value but higher risk: the Solaro lockup in two tones (orange a and o, the site's own two-tone habit) for a few frames before the snap to ink, then the ring pulses as the o. Graft only the colour beat, not C's fly-in assembly, so proto_end stays the ending.",
+            "frames": "C f705-745 (colour beat only) → A J4 (f778-785)"
+          }
+        ],
+        "recommendation": "Use A-continuity as the backbone. It is the most feasible and best specified board: every path exists, scales are computed against the raw files, it handles trim boxes, roughly 75 shots run on one anchored-montage mechanism, it reuses proto_open, proto_strike and proto_end, and every risky step has a fallback. Realistic build is about 14 h.\n\nGraft from B:\n- the bulb-window strobe (f330-371) over A's G1-G5;\n- the screen-space iris push through the sun ring's hole into the Tatras roof (f612-653);\n- the roof → score → gridCut → unlit 3D flip-to-orange → proto_end route (f648-701), replacing A's I3 photo-back-face 3D, which is the costliest and riskiest thing in A;\n- 'slnko → Solaro' as T2 in place of the colloquial 'solár', with proto_end's plain slide-out as the fallback.\n\nGraft from C:\n- the Scheiner → round PV cell → square cell landing of the orange ring (f564-587);\n- the exact offset keyline for the fire section.\n\nDo not adopt C's letter-surgery spine. It is the most creative board, but it has the most bespoke morph code, two verified data errors (the Slovakia hot spot is in Central Asia; the S105→S106 photo scale does not join up) and a soft, labelled Tesla flipbook.\n\nMandatory fixes before animating:\n1. Cut out handaxes-nine-bifaces and sundial-universal-ring-flat, and key the pylon sky.\n2. Use the raw files, not the 2400 px processed copies, for any shot scaled above 0.8x of the processed file (Franklin key, Prometheus, Scheiner, the Edison patent). Drop or vectorise the 1280 px NASA bolts and the patent close-ups.\n3. Crop or retouch all in-image text (the Edison poster title, the Scheiner Latin, the Prometheus verse, NASA logos).\n4. Clip C9's flame to the hand-axe's eroded alpha, or switch it to a front-of-axe shape rhyme.\n5. Point the B1 stones at assets/3d/*-lite.glb.\n6. Run A's onion-skin registration sheet over all hot spots before the timing pass. It is the single biggest quality lever."
+      }
+    ]
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Boards"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Judge"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "board:A-continuity",
+      "phaseIndex": 1,
+      "phaseTitle": "Boards",
+      "agentId": "a95ff7fc10ee89314",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1791721218877,
+      "queuedAt": 1791721218869,
+      "attempt": 1,
+      "lastToolName": "Bash",
+      "lastToolSummary": "cd /home/user/solaroads/research/storyboards && python3 - <…",
+      "promptPreview": "You are a senior motion designer / art director writing a FRAME-ACCURATE storyboard for a 14.8 s vertical ad (1080x1920, 60 fps = 888 frames) for SOLARO (solaro.sk), a Slovak solar PV installer & e-shop. Brief from the client: \"Make a fast-paced ad ~10-15 s (closer to 15). Bold, LIGHT MODE art reimagine. Clean and perfect: no beige 'artsy' look, no eyebrow labels. Paint elements on top of the imag…",
+      "promptFramed": true,
+      "lastProgressAt": 1791723777680,
+      "tokens": 562671,
+      "toolCalls": 87,
+      "durationMs": 2558802,
+      "resultPreview": "I wrote the storyboard to `/home/user/solaroads/research/storyboards/A-continuity.md`. A script check confirms the shot table covers f0–f887 with no gaps and every frame count matches, and all 89 referenced asset paths exist.\n\n1. **Concept:** one orange shape, built only from the Solaro cells, never leaves the screen. It goes ✦ → dot → flame → lightning → a letter → bulb → sun ring → solar cell → …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "board:B-editorial",
+      "phaseIndex": 1,
+      "phaseTitle": "Boards",
+      "agentId": "a59098a541172e38f",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1791721218877,
+      "queuedAt": 1791721218870,
+      "attempt": 1,
+      "lastToolName": "Edit",
+      "lastToolSummary": "/home/user/solaroads/research/storyboards/B-editorial.md",
+      "promptPreview": "You are a senior motion designer / art director writing a FRAME-ACCURATE storyboard for a 14.8 s vertical ad (1080x1920, 60 fps = 888 frames) for SOLARO (solaro.sk), a Slovak solar PV installer & e-shop. Brief from the client: \"Make a fast-paced ad ~10-15 s (closer to 15). Bold, LIGHT MODE art reimagine. Clean and perfect: no beige 'artsy' look, no eyebrow labels. Paint elements on top of the imag…",
+      "promptFramed": true,
+      "lastProgressAt": 1791723379990,
+      "tokens": 476809,
+      "toolCalls": 68,
+      "durationMs": 2160473,
+      "resultPreview": "Storyboard B-editorial is at /home/user/solaroads/research/storyboards/B-editorial.md. The shot table runs f0–887 with no gaps (136 shots, median 4 f). It uses 85 image files, all checked to exist. Nothing has been rendered yet, so registration points and the two letter morphs are untested.\n\n1. **Concept:** The Solaro mark is the film's layout system. Its four cells are image windows, and its 5:1 …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "board:C-typographic",
+      "phaseIndex": 1,
+      "phaseTitle": "Boards",
+      "agentId": "a58019a8a27f34795",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1791723381934,
+      "queuedAt": 1791721218870,
+      "attempt": 1,
+      "lastToolName": "Bash",
+      "lastToolSummary": "grep -oE '`assets/(raw|3d)/[^`]+`' research/storyboards/C-t…",
+      "promptPreview": "You are a senior motion designer / art director writing a FRAME-ACCURATE storyboard for a 14.8 s vertical ad (1080x1920, 60 fps = 888 frames) for SOLARO (solaro.sk), a Slovak solar PV installer & e-shop. Brief from the client: \"Make a fast-paced ad ~10-15 s (closer to 15). Bold, LIGHT MODE art reimagine. Clean and perfect: no beige 'artsy' look, no eyebrow labels. Paint elements on top of the imag…",
+      "promptFramed": true,
+      "lastProgressAt": 1791725667347,
+      "tokens": 477749,
+      "toolCalls": 54,
+      "durationMs": 2285412,
+      "resultPreview": "The storyboard is written to /home/user/solaroads/research/storyboards/C-typographic.md: 111 shots covering f0–f887 with no gaps, 85 B&W images plus the two flint 3D models. I checked that every asset path exists and that the frame ranges are contiguous; the image hot-spot coordinates are estimates from gridded thumbnails and still need a registration pass.\n\n1. **Concept:** the letters of Solaro a…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "judge:message",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "ac2803ed306c71126",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1791725669536,
+      "queuedAt": 1791725669492,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Use B-editorial as the backbone. Through the lens of messag…",
+      "promptPreview": "You are a senior motion designer / art director writing a FRAME-ACCURATE storyboard for a 14.8 s vertical ad (1080x1920, 60 fps = 888 frames) for SOLARO (solaro.sk), a Slovak solar PV installer & e-shop. Brief from the client: \"Make a fast-paced ad ~10-15 s (closer to 15). Bold, LIGHT MODE art reimagine. Clean and perfect: no beige 'artsy' look, no eyebrow labels. Paint elements on top of the imag…",
+      "promptFramed": true,
+      "lastProgressAt": 1791725946105,
+      "tokens": 234384,
+      "toolCalls": 23,
+      "durationMs": 276569,
+      "resultPreview": "{\"scores\":[{\"board\":\"A-continuity\",\"score\":6.5,\"why\":\"How well a viewer follows it: the orange shape goes through clear icon stages on the beat: spark, flame, bolt, bulb, a ring as the sun at 83% of the width, then a 6x10 panel and the mark. Someone with the sound off can follow 'from the spark to the sun to a panel to Solaro' even if they read none of the images. Brand: the mark's ring is the sun…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "judge:craft",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "a9d6ff7af759b24aa",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1791725669536,
+      "queuedAt": 1791725669493,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "I recommend B-editorial as the backbone (score 8). Under th…",
+      "promptPreview": "You are a senior motion designer / art director writing a FRAME-ACCURATE storyboard for a 14.8 s vertical ad (1080x1920, 60 fps = 888 frames) for SOLARO (solaro.sk), a Slovak solar PV installer & e-shop. Brief from the client: \"Make a fast-paced ad ~10-15 s (closer to 15). Bold, LIGHT MODE art reimagine. Clean and perfect: no beige 'artsy' look, no eyebrow labels. Paint elements on top of the imag…",
+      "promptFramed": true,
+      "lastProgressAt": 1791726104007,
+      "tokens": 244809,
+      "toolCalls": 26,
+      "durationMs": 433782,
+      "resultPreview": "{\"scores\":[{\"board\":\"A-continuity\",\"score\":6.5,\"why\":\"This is the smoothest and safest board to build. Nearly every change of state is a mixCell between cells (dot, flame, bulb, ring, tile, panel, mark), so it has the fewest morphs that could break. The easing kit matches the teardown closely: 1.008/f ambient push, expoOut 3 f entrances with a smear, log quadIn push-throughs, ring draw-ons at abou…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "judge:feasibility",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "a94e464de6bae5958",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1791725947685,
+      "queuedAt": 1791725669493,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Use A-continuity as the backbone. It is the most feasible a…",
+      "promptPreview": "You are a senior motion designer / art director writing a FRAME-ACCURATE storyboard for a 14.8 s vertical ad (1080x1920, 60 fps = 888 frames) for SOLARO (solaro.sk), a Slovak solar PV installer & e-shop. Brief from the client: \"Make a fast-paced ad ~10-15 s (closer to 15). Bold, LIGHT MODE art reimagine. Clean and perfect: no beige 'artsy' look, no eyebrow labels. Paint elements on top of the imag…",
+      "promptFramed": true,
+      "lastProgressAt": 1791726424955,
+      "tokens": 239888,
+      "toolCalls": 37,
+      "durationMs": 477269,
+      "resultPreview": "{\"scores

@@ -1,0 +1,188 @@
+"verdicts": [
+      {
+        "scores": [
+          {
+            "board": "A-continuity",
+            "score": 6.5,
+            "why": "How well a viewer follows it: the orange shape goes through clear icon stages on the beat: spark, flame, bolt, bulb, a ring as the sun at 83% of the width, then a 6x10 panel and the mark. Someone with the sound off can follow 'from the spark to the sun to a panel to Solaro' even if they read none of the images. Brand: the mark's ring is the sun for about 2 s (H, f480-592), and the panel merging into the mark (I7-I9) is a clear statement that the logo is a solar module. Copy is the weak part. There are only two text beats. 'svet.' (f305-315, the dot as a full stop) appears with no setup after the Volta pile. The payoff 'solár -> Solaro' (f730-785) shows a colloquial category word in the brand's own lockup slot for about 32 f, and then changes by just +o, s->S and a dropped acute. That reads more like a typo being fixed than a reveal. Proof that Solaro installs: the client photos only appear as fragments behind 86 px panel cells for about 30 f (f640-669). The Bardejov dot on the night Earth is a nice idea that nobody will be able to read. Claude-likeness: this board is the reference's skeleton in a new skin: a Ø34 dot at (540,940), roughly 75 registered match cuts, images swapped inside a pulsing ring, a sun montage accelerating from 7 to 2 f, a stepped zoom on a poster, thin ink orbit circles, a dot used as a full stop, and the wordmark sliding out of the mark. Of the three, it is the most likely to read as 'the Claude ad, but orange'.",
+            "fatal_flaws": [
+              "Structure copies the reference almost shot for shot (anchored dot match-cuts, images swapped inside a pulsing ring, sun montage accelerating 7->2 f, stepped zoom, ink orbit rings, the 'svet.' full-stop gag, wordmark slide-out), so it will read as the Claude spot recoloured orange rather than a Solaro film.",
+              "The lockup reads '[mark] solár' for about 32 f (f730-777). A generic, colloquial word sits in the brand slot, with a Poppins acute placed over the custom wordmark 'a'. The change to 'Solaro' is only +o/s->S/á->a, so it looks like a correction, not a reveal, at the most valuable moment of the film.",
+              "'svet.' (f300-315) has no setup: 'world.' appears out of nothing after the Volta/Davy images, so the svet->svetlo pun lands as a puzzle.",
+              "Solaro's real installs are barely visible (photo fragments in 6x10 cells, f640-669). Nothing clearly says 'they put this on your roof'."
+            ]
+          },
+          {
+            "board": "B-editorial",
+            "score": 8,
+            "why": "Best on message. Each era gets one short Slovak noun on white, held 34-60 f, which matches the reference's roughly 1 s text beats: 'iskra' (f72-131) -> 'oheň' (f192-237) -> 'svetlo' (f372-411) -> 'slnko' (f614-647) -> Solaro. A homeowner scrolling with the sound off gets the brand study's line 'Od iskry po slnko' spelled out, plus the orange icon chain under it. Best on brand memory. The mark's four cells are used as the layout from the start: stones inside the logo windows that slam together to strike the spark (f28-71), the full-bleed 2x2 sequencer of mark windows with orange wires in the gutters for the electricity era (f276-329), and the ring of M2 reused as the sun. By the time the logo resolves, the viewer has already looked through it several times. Best local hook: the sun ring becomes the 'o' of 'slnko', with Solaro's Tatras roof inside the counter, then a push into a full-bleed Slovak roof with panels (f620-671), which is cut into a 6x10 panel, flipped orange and folded into the mark. Slovaks recognise the Tatras instantly, and the message 'solar, on our roofs, by Solaro' is plain. 'slnko -> Solaro' is a richer and more visible payoff than 'solár': n and k drop to dots that grow into a and r, and the letters snap to black on the chord (f752-768), followed by a 2.0 s hold. It is also the least Claude-like structure: windows, splits, a bolt that becomes the gutter, and a bulb strobe are vocabulary the reference never uses. It loses points for four things. The orange ✦ sits as the tittle of 'ıskra' for 60 f, and the EN version is 'spark✦'. Only one client photo is used, so there is no sense of scale. The bulb strobe plus three inverts add flicker. The electricity chapter (f240-329) has no word, and its 3 f windows of Leyden/Volta apparatus will not be read by a lay viewer.",
+            "fatal_flaws": [
+              "The orange four-point ✦ docked as the tittle beside a word ('ıskra', f72-131; EN 'spark✦' as a superscript) is the generic 'AI feature' sparkle UI pattern, and the 420 px orange ✦ on the invert (f48-57) sits close to Claude's own orange spark. It must collapse to the round dot before docking and stay on screen for no more than about 6 f as a clean emblem.",
+              "Proof is thin: Solaro's 4,000+ installs show up as a single photo (Tatras). There is no van, sticker or second roof, so 'Solaro installs' is implied rather than shown (graft a short multi-roof beat).",
+              "The bulb strobe (f348-371, orange<->image every 3 f, 8 alternations) plus 3 inverts is flicker-heavy for Meta placements. Cap it at 2-3 alternations."
+            ]
+          },
+          {
+            "board": "C-typographic",
+            "score": 6,
+            "why": "Richest Slovak wordplay and the strongest logic for the brand, but it is the most Claude-like of the three. The chain kameň -> plameň -> blesk -> svetlo -> slnko -> Solaro tells the whole story in words. 'kameň -> plameň' (the strike knocks the arms off the k, the stem becomes the l, and the p grows from the spark) is a native rhyme that Slovaks will enjoy. 'svet' is motivated: the Earth at night collapses into the dot on Slovakia, which becomes 'svet' (world) and then 'svetlo'. The ending teaches the logo better than either other board. Sol·a·r·o is shown two-tone with an orange a and o, the site's own two-tone habit (f712-743). The orange o lifts off as the ring and the a as the pin, while tile and leaf grow from the point where the spark was born (f744-767). The 5x9 living grid of 44 Solaro roofs (f588-629) is the best 'we've done thousands' proof without using numbers. Three things work against it. First, the reading load is too high for a feed. The first words are only static for a few frames (kameň about 17 f legible before the surgery, blesk 11 f static, svetlo 15 f), which is under half the reference's roughly 1 s beats, and the letter surgery will mostly go unnoticed at that speed. Second, the type mechanics are the reference's signature devices copied 1:1: 1-glyph-per-frame typing with a 50->100% pop, a Light->Bold weight surge (th/ink), baseline and x-height guide rules, and a comet that lands and grows an orange letter which snaps to ink (ask->task, draft->craft). Third, the film is bookended by an orange text cursor: it backspaces solaro.sk and Solaro at the open, types 'svet', then types solaro.sk and blinks through the whole 2 s hold. On a white card that is an AI chat prompt, so the ad would look like it is selling an AI product.",
+            "fatal_flaws": [
+              "An orange text cursor bookends the film: it backspaces 'solaro.sk' and 'Solaro' (f2-27), types 'svet' (f388-391), then types solaro.sk and blinks through the 2 s hold (f770-887). On white, that is the visual signature of an AI chat prompt and the reference's 'Keep thinking.' device 1:1. Under this lens it reads as Claude, not Solaro.",
+              "The opening deletes the brand: the first ~0.45 s the scroller sees is Solaro being erased letter by letter.",
+              "Text beats are too short for a scroller: kameň ~17 f, blesk ~11 f and svetlo ~15 f of static read, against the reference's ~55-60 f. Six words plus letter surgery in 14.8 s means most viewers will catch 'plameň', 'slnko' and 'Solaro' and miss the joke.",
+              "The other type moves copy the reference: the Light->Bold weight surge (f410-416), guide rules at the baseline and x-height, and an orange letter that grows from a comet and then snaps to ink."
+            ]
+          }
+        ],
+        "best_ideas_to_graft": [
+          {
+            "from": "B-editorial",
+            "idea": "Opening strike: the four mark cells become windows full of flint, step-zoom twice, then slam shut (gap 84->0). The white negative-space ✦ ignites orange on a 2 f invert with a spark burst, and the windows fly out. The brand itself strikes the first spark. Keep the ✦ for no more than about 6 f, then collapse it to the round dot.",
+            "frames": "B f16-71 (cells as windows f28-47, slam f42-47, ignition f48-49, windows out f50-57)"
+          },
+          {
+            "from": "B-editorial",
+            "idea": "One short Slovak noun per era, on white, held 40-60 f each: iskra / oheň / svetlo / slnko. This guarantees 'Od iskry po slnko' is understood with the sound off. The i of iskra takes the round orange dot as its tittle, not the ✦.",
+            "frames": "B f72-131 (iskra), f192-237 (oheň), f372-411 (svetlo), f614-647 (slnko)"
+          },
+          {
+            "from": "C-typographic",
+            "idea": "Optional replacement for the iskra/oheň pair: 'kameň -> plameň' letter surgery. The strike knocks the arms off the k, the stem becomes the l, and the p grows from the spark; the a ignites and lifts off as the flame (pin cell). It is the best native wordplay of the three, but kameň must be legible for at least 30 f before the surgery.",
+            "frames": "C f96-155"
+          },
+          {
+            "from": "B-editorial",
+            "idea": "Electricity era inside the full-bleed mark grid (M2F): Leyden/Volta/Galvani swap clockwise through the four mark windows every 3 f while orange wires run along the gutters. This gives about 1 s of mid-film exposure to the logo's shape. The lightning bolt straightens into the grid's gutter to enter it.",
+            "frames": "B f240-329 (bolt split f240-275, rect->mark cells f276-287, sequencer f288-329)"
+          },
+          {
+            "from": "C-typographic",
+            "idea": "Motivate 'svet': the Earth at night collapses into the orange dot on Slovakia (the world becomes the dot), then the word 'svet' appears and becomes 'svetlo'. Build it with A's comet that draws the l and inflates into the orange o/bulb, not with a typing cursor.",
+            "frames": "C f372-383 (globe -> dot on Slovakia) + A f300-359 (svet -> comet draws l -> orange o -> bulb push-through), replacing B f330-411"
+          },
+          {
+            "from": "A-continuity",
+            "idea": "The dot orbits the night Earth, and its stroke thickens into the ring at exactly the logo's 0.479 hole ratio. Night cuts to day inside it, so the mark's ring is literally the sun.",
+            "frames": "A f459-480 (G14 orbit + ring growth)"
+          },
+          {
+            "from": "B-editorial",
+            "idea": "The sun ring docks as the orange o of 'slnko'. Solaro's Tatras roof shows inside the counter, then the camera pushes through the exact counter path to the full-bleed Slovak roof with panels. This is the clearest 'solar on our roofs' moment and gives Slovaks instant local recognition.",
+            "frames": "B f612-653 (ring->o f612-619, roof in counter f620-637, push-through f638-647, full-bleed f648-653)"
+          },
+          {
+            "from": "C-typographic",
+            "idea": "Proof of scale without numbers: a 5x9 grid of real Solaro roofs (18 client photos) changing in 2-frame diagonal waves around the orange centre cell, then collapsing so the centre cell grows into the Tatras roof. Use it in a short form of 15-20 f before B's dive, or swap the photos into B's panel cells before the flip.",
+            "frames": "C f588-641 (fill f588-591, living grid f592-623, collapse + grow f624-641)"
+          },
+          {
+            "from": "B-editorial",
+            "idea": "Roof -> panel -> mark: score lines are drawn on the full-bleed roof, the roof is cut into a 6x10 Solaro grid (an invisible tiling at p=0), 60 slabs flip to orange in concentric waves (the clean 3D beat), then the proto_end merge into 2x2 and the mark radii.",
+            "frames": "B f654-729"
+          },
+          {
+            "from": "C-typographic",
+            "idea": "The letters become the logo. In slnko -> Solaro, s->S and l/o glide, n->r (an n with its leg cut), and the k drops its arms again, rhyming with the open; the a is born from an orange dot. Sol·a·r·o holds in two tones (the site's habit), then the orange o lifts off as the ring and the a as the pin, while tile and leaf grow from the mark centre where the spark was born. The gap opens and the ✦ becomes the '+'. This teaches the viewer that ring = o and pin = a, which makes the logo memorable.",
+            "frames": "C f696-767 (surgery f696-711, two-tone hold f712-743, lift-off to lockup f744-767)"
+          },
+          {
+            "from": "A-continuity",
+            "idea": "Icon-chain rule: every era begins with a morph of the one orange element on a sub-beat (spark ✦ -> flame -> bolt -> bulb -> sun ring -> panel -> mark), so the story still reads if no archival image is parsed.",
+            "frames": "A f114-120 (ignition inside the hand-axe), f202-211 (ember -> bolt + invert), f350-360 (o -> bulb), f593-613 (ring -> tile -> panel)"
+          },
+          {
+            "from": "B-editorial",
+            "idea": "End card: solaro.sk is revealed by a hard L->R wipe under the exact lockup, not typed with a blinking cursor, and the orange letters snap to ink exactly on the add9 chord. Hold 1.7-2.0 s, with f887 = f0.",
+            "frames": "B f768-887"
+          }
+        ],
+        "recommendation": "Use B-editorial as the backbone. Through the lens of message and brand it is the only board where a Slovak homeowner scrolling at full speed is guaranteed to get the story. Each era has one plain noun, iskra / oheň / svetlo / slnko, held about 40-60 f on white, so 'Od iskry po slnko -> Solaro' is spelled out even with the sound off. It also trains the eye on the logo before the logo lands: the mark's cells serve as stone windows, then as the electricity sequencer, then the ring becomes the sun, and the panel folds into the mark. It ends on an instantly Slovak image, panels on a roof under the Tatras, seen through the o of 'slnko'. And its layout-system grammar is the least Claude-shaped of the three.\n\nRequired fixes on B:\n(1) Drop the orange ✦ next to type. Collapse it to the round dot before it docks as the i's tittle, cut the EN 'spark✦' ornament, and keep every clean ✦ to 6 f or less (the strike and the final gap breath), so it reads as a flint spark and not as the AI sparkle or Claude's mark.\n(2) Add proof: insert a short (15-20 f) version of C's living grid of Solaro roofs before the dive, or put several client photos into the 6x10 cells before the orange flip.\n(3) Cap flicker: the bulb strobe should be 2-3 alternations, with no more than 3 inverts in total, at most 1 per second.\n(4) Motivate 'svetlo' with C's Earth-into-the-dot-on-Slovakia move and A's comet that draws the l and inflates into the orange o/bulb.\n(5) Upgrade the lockup with C's letters-become-the-mark ending (Sol·a·r·o two-tone, the o lifting off as the ring and the a as the pin, then the gap opening) while keeping B's chord snap and a hard-wipe solaro.sk.\n\nHard no's from the other boards:\n- C's typing and blinking cursor at the open, during 'svet' and on the end card. It reads as an AI chat prompt.\n- C's Light->Bold weight surge and guide rules (copied reference devices).\n- A's 'solár' sitting in the lockup slot and its 'svet.' full-stop gag.\n- A's ink orbit rings with in-ring image swaps, which are the reference's signature.\n\nCopy: SK master with lowercase sentence-case nouns. Poppins Bold covers ň/á/ľ/ô, which I checked in the font. Treat EN as a separate cut with solar -> Solaro.\n\nClient sign-off needed on:\n- 'slnko -> Solaro' as the payoff;\n- using the Tatras roof photo as the hero;\n- whether to test a variant with a single SK benefit line under the lockup, such as 'Fotovoltika na kľúč', in place of or beside solaro.sk. The film never names the product category in words, only in pictures."
+      },
+      {
+        "scores": [
+          {
+            "board": "A-continuity",
+            "score": 6.5,
+            "why": "This is the smoothest and safest board to build. Nearly every change of state is a mixCell between cells (dot, flame, bulb, ring, tile, panel, mark), so it has the fewest morphs that could break. The easing kit matches the teardown closely: 1.008/f ambient push, expoOut 3 f entrances with a smear, log quadIn push-throughs, ring draw-ons at about 60-72 deg/f, stepped zooms of 0.71x and 0.82x, and 2 f inverts. The pacing curve is close to the reference. Parsing its tables gives 106 shots, median 5 f, mean 8.4 f, a peak of 11 cuts per 0.5 s, and real breathing room at D11, E20, F and G14. Under the motion-craft lens it falls short on originality. About 70% of the runtime uses the reference's own grammar: a 34 px dot on a centred B&W cut-out, an orange comet head trailing ink (its COMET spec is the reference's brush), images clipped inside a big ring (section H is the reference's act 1), lamp swaps registered like the reference's eye-line busts, a stepped zoom on a poster (the snowflake device), and 2 f inverts. It also runs slower than the reference at the fastest end: 10 two-frame shots against 25, and a peak of 11 against 15. Text arrives late and appears only twice.",
+            "fatal_flaws": [
+              "Reads as a reskin of the reference. The montage grammar from C to H (f72-592) copies the reference beat for beat: a dot on registered centred cut-outs, an orange-head comet with an ink trail, images inside a ring, registered swaps, a stepped poster zoom and 2 f inverts. Only the hue and the element's shapes change.",
+              "Text appears first at f300 (5.0 s); the reference shows text at 1.7 s. There are only two text moments (svet->svetlo and solár->Solaro), so 'morphing text' is under-served. Most montage shots are one centred image at about 100% W, so 'small/bigger/several at once' is barely used, apart from a few scale jumps.",
+              "The climax shrinks. The 22-sun accelerando (f480-570) plays inside a 431 px hole framed by a 235 px orange annulus, about 24% of the frame in orange for 1.9 s. Images sit at about 40% W exactly when the cuts peak. The peak is 11 cuts per 0.5 s against the reference's 15.",
+              "Geometric error in §3.2. The board says DOT and ✦ are 'pixel-identical at R=17', which is false. The concave ✦ has area (4-π)R² ≈ 0.86R², while the dot has πR², so the star covers about 27% of the dot. Every DOT<->✦ swap (B2/B3, E1/E2, E3, E18, E19) will visibly pop unless it uses makeMorph or passes through a point.",
+              "The landing is long. From f593 to f887 is 4.9 s with few cuts, including 32 f spent reading a colloquial '[mark] solár' and a 102 f static hold. The reference holds for 71 f, and the brief asks for 'fast-paced above all'."
+            ]
+          },
+          {
+            "board": "B-editorial",
+            "score": 8,
+            "why": "This is the most original board, and it is the fastest. The Solaro mark becomes the layout system: 2x2 windows (M2), giant quarter-round SPLIT windows, full-bleed 2x2 (M2F), a disc window and the 6x10 panel. Nothing in the reference looks like this, yet the board keeps the reference's engine underneath it: in-place swaps, morphs through a point, ratio push, stepped zoom, inverts and the 2 f flurry. Many transitions swap a fill inside an identical outline (the stone windows, the bulb-window strobe, the sequencer), so there is zero morph error. The structural morphs are exact: gap->0 gives the ✦ (verified against sparkPath and markCells, where all four inward corners are R = C/2), the bolt polyline straightens into the gutter, the quarters run rect->cell through mixCell, the ring becomes the wordmark o (sizes within 4 px), and the Tatras iris behind the counter is consistent (screen cover at 0.336). Parsed pacing: 136 shots, median 4 f, 19 two-frame shots against the reference's 25, and a peak of 13 cuts per 0.5 s against 15. That is the closest match to the reference's speed. The open is the best of the three: stone fills the windows, the windows slam shut, and the spark is the negative space of the logo. Weak spots: thin 3D, two word beats that work as captions, shallow valleys in the cut curve, and two small pops.",
+            "fatal_flaws": [
+              "3D is under-delivered. The only 3D is an unlit flip wave 6 px deep (#126-129, f672-701), which reads as a 2D scaleY. The GLB flints are listed as 'optional'. The brief explicitly asks for clean 3D, and a real stone strike is available.",
+              "Two of the four word beats are captions, not morphs. 'oheň' (#33-37, f192-237) and 'svetlo' (#72-73, f372-413) slide in under or after the images and then collapse. They read as a labelled slideshow, the closest any board comes to the banned eyebrow labels.",
+              "The bolt hand-off pops at f245. A tapered taperStroke, 34 px wide perpendicular to the path, swaps to a band of constant horizontal width 2d = 34. On the 31° segment of P the horizontal width differs by about 17%, and the tapered ends jump to full width.",
+              "The stepped zoom (x0.80 at f678, x0.64 at f684, x0.556 at f690) runs on top of the moving flip wave. Hard scale jumps on an object that is still animating read as dropped frames. The reference only steps on held stills with an inner drift.",
+              "The cut curve has no deep valleys. Cuts per 0.5 s never drop below 2 between 0 and 13 s (4,8,3,5,5,5,5,2,10,5,9,6,5,3,6,10,2,5,8,13,...). The reference drops to 1 at its text beats. The orange<->image bulb strobe every 3 f (f348-371) adds fatigue, and the 120 f static hold is 1.7x the reference's 71 f."
+            ]
+          },
+          {
+            "board": "C-typographic",
+            "score": 7,
+            "why": "This board answers 'morphing text' and 'clean 3D' best. Its signature mechanics are original and come from the brand. The Poppins Bold k splits along one vertical line at the stem edge (a clip, not a morph), and its stem becomes the wordmark l as a rect->rect mixCell; that is how kameň becomes plameň. The flame becomes the orange l of 'blesk' (mixCell pin->rect, -135° to -180°). The l bends into a bolt at constant stroke width. n becomes r because the wordmark r is an n with its leg cut. The hot letters o and a lift off as the ring and pin cells and assemble the mark, while tile and leaf grow from the point where the spark was born. It has both a GLB flint strike (proto_strike already works) and a 3D ring turn. Easing numbers match the reference: push-through 1.04 to 1.42 per frame, quartOut 24 f, stepped zooms of 0.5, 0.62 and 0.72. Against that, it imports the reference's AI-chat devices almost verbatim and carries the highest number of risky bespoke glyph operations. The first 2.5 s are slow, the board asks for a lot of Slovak reading, and its climax is a 44-cell photo mosaic wave rather than full-frame 2 f cuts. It has only 6 two-frame shots and a peak of 10 cuts per 0.5 s.",
+            "fatal_flaws": [
+              "It imports the reference's AI-chat grammar: a cursor backspaces the brand (S02-S04, f2-24), a cursor types 'svet' at 1 glyph/f (S70, f388-391), a Light->Bold weight surge (S73, f410-416) repeats th/ink, the clean 3D beat copies the reference's 3D asterisk bloom (quartOut 24 f with a cool #ECEEF1 contact shadow, S82 f462-485), and the Tesla 'zoetrope' flipbook (S58) is the reference's zoetrope. A text cursor is Claude's metaphor, not a solar installer's.",
+              "The end card is not static. A cursor blinks 12 f on and 12 f off through the whole 2.0 s hold (S111, f768-887), which is a UI trope that competes with the logo. The 120 f hold is also 1.7x the reference's.",
+              "It has the most morph risk (about 10 bespoke glyph operations). The Light->Bold weight surge uses makeMorph between static Poppins outlines, not a variable axis, so points on v, e and s will swim. The mitred bolt polyline turns about 140° at (330,640), so its join will flip from miter to bevel at the miterLimit during S37 and pop. The a<->pin and o<->ring 'near-identity' claims are never measured (no IoU).",
+              "A spec contradiction will cause a pop at f647/648. At f647 the Tatras photo is cover-fit to the screen (scale ≈0.336). At f648 it is 'cover-fit to the counter's bounding box', which is ≈0.564 at x40. The 'invisible' window switch only works if the counter photo's transform is defined as the inverse of the camera.",
+              "The hook is slow and the climax is generic. Cuts per 0.5 s run 0,2,7,2,0 over the first 2.5 s, and the film asks viewers to read 6 Slovak words plus a URL. The climax (S102, f592-623) is a 5x9 mosaic of 174 px smartphone roof photos with diagonal swap waves, which is a stock template look and has less impact than full-frame 2 f cuts."
+            ]
+          }
+        ],
+        "best_ideas_to_graft": [
+          {
+            "from": "B-editorial",
+            "idea": "BACKBONE OPEN: the lockup's wordmark is sucked into the mark, two stepped zooms (x1.47) turn the cells into windows filled with stone, a 2 f clockwise ripple of hand-axes runs through them, then the windows SLAM (gap 84->0, inQuart 6 f). On a 2 f invert the white negative space, which is exactly sparkPath(A,210), floods orange, sparks burst, the windows fly out and the ✦ settles. The spark is born from the logo itself.",
+            "frames": "f0-71 (#01-#12)"
+          },
+          {
+            "from": "C-typographic",
+            "idea": "Put real 3D stone into the backbone open. Render the ring and tile windows in B's open as live GLB flints (proto_strike / assets/3d/flint-0370-lite.glb and flint-0373-lite.glb) turning about 2°/f during the step zooms, so the slam is real 3D stone and not PNG renders.",
+            "frames": "C S07-S08 f42-57 -> B f28-47"
+          },
+          {
+            "from": "C-typographic",
+            "idea": "Flame -> orange 'l' of blesk (mixCell pin->rect, -135° -> -180°, E.whip 6 f), with the other letters slammed in by expoOut. The l then bends into a CONSTANT-WIDTH bolt with P3 fixed on the baseline, followed by a 2 f invert on the thunder. Feed that bolt straight into B's bolt split as the gutter, with the band width set to the l width. This replaces B's caption-style oheň rest and fixes B's taper->band pop at f245.",
+            "frames": "C S35-S38 f216-241 -> replaces B #36-#39 f210-244, then B #40-#48 f245-287"
+          },
+          {
+            "from": "B-editorial",
+            "idea": "The bolt becomes the grid. Polyline P cuts the frame into L/R archive halves with an orange gutter, the vertices straighten to x=540, a horizontal gutter opens, and the quarters run rect->cell through mixCell into the full-bleed mark windows. A 3 f clockwise sequencer of Leyden/Volta/Galvani images follows, with orange wires running along the gutters.",
+            "frames": "f240-329 (#38-#61)"
+          },
+          {
+            "from": "A-continuity",
+            "idea": "'svet.' -> 'svetlo'. The dot sits as the full stop, rises as a comet that leaves the ink l, arcs over and inflates into the orange o (circle->ring). Then a log quadIn push-through morphs the o into the bulb, which lands on Edison's glass. Use this in place of B's svetlo caption so that every word beat is a morph. B's identical-outline bulb-window strobe can then follow, cut to 2-3 alternations.",
+            "frames": "A F1-F7 f300-359 + G1 f360-367 -> replaces B #62-#73 f330-413"
+          },
+          {
+            "from": "A-continuity",
+            "idea": "Night Earth: the dot sits on Bardejov (Solaro HQ), the globe pulls out and recentres (log cubicInOut 12 f), then the dot orbits the limb 360° at 60°/f and draws a ring. The ring's inner edge locks to the limb and its outer edge grows to the logo's exact 0.479 ratio. This gives B's sun ring a drawn, local origin instead of a bulb->ring mixCell over the globe.",
+            "frames": "A G14 f439-479 -> B #92 f480-503"
+          },
+          {
+            "from": "B-editorial",
+            "idea": "Disc-window sun montage with concentric 'disc-reg'/'ring-reg' registration (the orange ring lands exactly on a moon or florets), a 2 f callback flurry of earlier eras, then the ring docks as the wordmark o of 'slnko' (makeMorph, sizes within 4 px). The camera dives through the exact counter path into the full-bleed Tatras roof, which sits behind it in screen space at cover 0.336, so there is no seam.",
+            "frames": "f504-647 (#93-#122)"
+          },
+          {
+            "from": "A-continuity",
+            "idea": "Registered bridge from sun to cell. The ring shrinks onto one disc of Scheiner's 1612 grid of suns, two stepped zooms (x0.61, x0.71) reveal the whole grid, then a registered swap at the same radius shows the round cells of a 1978 PV module. Promote B's 2 f callbacks #106/#109 to this 20 f bridge before the ring docks as the o.",
+            "frames": "A HB1-HB4 f571-592 (or C S98-S99 f564-581) -> B ~f590-611, replacing the SDO hold #119"
+          },
+          {
+            "from": "A-continuity",
+            "idea": "Make the panel flip real, lit 3D: 60 extruded cells (depth 16, bevel 2, satin orange, key light top-left) as the panel tilts X 0->28°->0 toward the sun. Drop B's stepped zoom during the flip and use a continuous log-scale zoom out to the 600x1011 proto_end box instead.",
+            "frames": "A I3 f614-639 -> B #126-#129 f672-701"
+          },
+          {
+            "from": "A-continuity",
+            "idea": "Keep the client roof photo masked inside t

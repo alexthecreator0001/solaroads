@@ -8,6 +8,7 @@
 //   node tools/render.mjs --png out/frames --from 0 --to 900  PNG sequence
 //   --workers N   split the range over N browser pages (default 2)
 //   --scale 0.5   render at reduced resolution for fast previews
+//   --q "lang=en&only=s3"   extra URL params for the film (language, single section)
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -90,7 +91,7 @@ async function main() {
     const page = await browser.newPage({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 });
     page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning' || args.verbose) console.log(`[page ${wid}] ${m.text()}`); });
     page.on('pageerror', (e) => console.error(`[page ${wid}] ERROR`, e));
-    await page.goto(`http://127.0.0.1:${port}/engine/index.html?scale=${scale}&w=${wid}${args.film ? `&film=${args.film}` : ''}`);
+    await page.goto(`http://127.0.0.1:${port}/engine/index.html?scale=${scale}&w=${wid}${args.film ? `&film=${args.film}` : ''}${args.q ? `&${args.q}` : ''}`);
     await page.waitForFunction(() => window.__ready === true, null, { timeout: 120000 });
     return page;
   };

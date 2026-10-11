@@ -62,7 +62,12 @@ export function layoutHybrid(font, str, size, { x = 0, y = 0, tracking = 0, alig
   for (const ch of str) {
     const wm = use.includes(ch) ? WM_GLYPHS[ch] : null;
     if (wm) {
-      const lsb = prevG || prevWM ? gapWM / 2 : 0;
+      // spacing: wordmark pairs use the logo's own optical gaps; after a font glyph (which already
+      // carries its right side-bearing) only a small extra gap
+      const prevCh = items.length ? items[items.length - 1].ch : null;
+      let lsb = 0;
+      if (prevWM) lsb = (prevCh === 'r' ? 17.7 * k : gapWM) - gapWM / 2;
+      else if (prevG) lsb = gapWM * 0.22;
       pen += lsb;
       const w = wm.box.w * k;
       items.push({ ch, wm, x: pen, adv: w, k });

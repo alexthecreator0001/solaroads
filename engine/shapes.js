@@ -62,6 +62,7 @@ export function mixCell(a, b, t) {
     r: lerpArr(a.r, b.r, t),
     rot: lerp(a.rot || 0, b.rot || 0, t),
   };
+  for (const k of ['s', 'sx', 'sy']) if (a[k] != null || b[k] != null) out[k] = lerp(a[k] ?? a.s ?? 1, b[k] ?? b.s ?? 1, t);
   if (a.hole || b.hole) {
     const ha = a.hole || holeAtCentre(b.hole ? { ...b.hole } : a);
     const hb = b.hole || holeAtCentre(a.hole ? { ...a.hole } : b);
@@ -93,18 +94,28 @@ export function brandGradient(ctx, y0, y1, top = COLORS.orangeTop, bottom = COLO
   return g;
 }
 
-// Fill a cell in screen space with brand gradient (+ optional subtle inner shadow like the logo file)
-export function drawCell(ctx, c, { fill, alpha = 1, innerShadow = 0, scale = 1 } = {}) {
+// Screen-space Path2D of a cell including rotation (rot), uniform scale (s) or non-uniform
+// scale (sx, sy) about a pivot (px, py; default = cell centre).
+export function cellPath2D(c) {
   const local = cellToPath(c);
-  const cx = c.x + c.w / 2, cy = c.y + c.h / 2;
-  const m = new DOMMatrix().translate(cx, cy).rotate(((c.rot || 0) * 180) / Math.PI).scale(c.s ?? 1).translate(-cx, -cy);
+  const px = c.px ?? c.x + c.w / 2, py = c.py ?? c.y + c.h / 2;
+  const sx = c.sx ?? c.s ?? 1, sy = c.sy ?? c.s ?? 1;
+  const m = new DOMMatrix().translate(px, py).rotate(((c.rot || 0) * 180) / Math.PI).scale(sx, sy).translate(-px, -py);
   const p = new Path2D();
   p.addPath(local, m);
-  // bbox of rotated cell for the gradient span
-  const ext = Math.abs(c.h / 2 * Math.cos(c.rot || 0)) + Math.abs(c.w / 2 * Math.sin(c.rot || 0));
+  return p;
+}
+
+// Fill a cell in screen space with brand gradient (+ optional subtle inner shadow like the logo file)
+export function drawCell(ctx, c, { fill, alpha = 1, innerShadow = 0, scale = 1 } = {}) {
+  const p = cellPath2D(c);
+  const cy = c.y + c.h / 2;
+  const sy = c.sy ?? c.s ?? 1, sx = c.sx ?? c.s ?? 1;
+  // extent of the rotated cell for the gradient span
+  const ext = Math.abs((c.h / 2) * sy * Math.cos(c.rot || 0)) + Math.abs((c.w / 2) * sx * Math.sin(c.rot || 0));
   ctx.save();
   ctx.globalAlpha *= alpha;
-  ctx.fillStyle = fill || brandGradient(ctx, cy - ext * (c.s ?? 1), cy + ext * (c.s ?? 1));
+  ctx.fillStyle = fill || brandGradient(ctx, cy - ext, cy + ext);
   ctx.fill(p, 'evenodd');
   if (innerShadow > 0) innerShadowPath(ctx, p, innerShadow, scale);
   ctx.restore();
@@ -200,5 +211,28 @@ export function markCells(cx, cy, s, g = GAP, spread = 0) {
     }
     out[k] = c;
   }
+  return out;
+}
+
+// Sample a cell (incl. rotation/scale about its centre) into polygon rings, so cells can be
+// morphed against glyph outlines with morph.makeMorph. Outer ring clockwise, hole ring after it.
+export function cellToRings(c, n = 160) {
+  const ring = (x, y, w, h, rad) => {
+    const m = Math.min(w, h) / 2;
+    const [tl, tr, br, bl] = rad.map((v) => Math.max(0, Math.min(v, m)));
+    const pts = [];
+    const arc = (ax, ay, r, a0, a1, k) => { for (let i = 0; i <= k; i++) { const a = a0 + ((a1 - a0) * i) / k; pts.push([ax + r * Math.cos(a), ay + r * Math.sin(a)]); } };
+    const k = Math.max(4, Math.round(n / 8));
+    arc(x + w - tr, y + tr, tr, -Math.PI / 2, 0, k);
+    arc(x + w - br, y + h - br, br, 0, Math.PI / 2, k);
+    arc(x + bl, y + h - bl, bl, Math.PI / 2, Math.PI, k);
+    arc(x + tl, y + tl, tl, Math.PI, Math.PI * 1.5, k);
+    return pts;
+  };
+  const cx = c.x + c.w / 2, cy = c.y + c.h / 2, rot = c.rot || 0, s = c.s ?? 1;
+  const co = Math.cos(rot), si = Math.sin(rot);
+  const tf = (r) => r.map(([x, y]) => { const dx = (x - cx) * s, dy = (y - cy) * s; return [cx + dx * co - dy * si, cy + dx * si + dy * co]; });
+  const out = [tf(ring(c.x, c.y, c.w, c.h, c.r))];
+  if (c.hole && c.hole.w > 0.5 && c.hole.h > 0.5) out.push(tf(ring(c.hole.x, c.hole.y, c.hole.w, c.hole.h, c.hole.r)));
   return out;
 }

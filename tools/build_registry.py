@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Build assets/registry.json from assets/processed/** (+ manual hot points in assets/registry-points.json).
+"""Build assets/registry.json from assets/processed/** (+ hot points / metadata from assets/points/*.json,
+one file per section; values: {pt:[fx,fy], focus:[fx,fy], r: disc radius as fraction of width, ...}).
 Keys: '<name>' for the flat B&W version, '<name>.cut' for the cutout. Era prefixes are dropped
 (e.g. 'spark-fire-oil-lamp-roman-plain-met' -> 'oil-lamp-roman-plain-met')."""
 import os, json, re
@@ -21,8 +22,9 @@ for era in sorted(os.listdir(P)):
         with Image.open(os.path.join(d, f)) as im:
             w, h = im.size
         reg[key] = {'file': f'assets/processed/{era}/{f}', 'w': w, 'h': h, 'era': era}
-pts = os.path.join(ROOT, 'assets/registry-points.json')
-if os.path.exists(pts):
+import glob
+point_files = sorted(glob.glob(os.path.join(ROOT, 'assets/points/*.json')))
+for pts in point_files:
     for k, v in json.load(open(pts)).items():
         if k in reg:
             reg[k].update(v)
