@@ -90,7 +90,7 @@ function drawShot(ctx, f, Fi) {
 export default {
   name: 's2_fire', f0, f1,
   needs: [[138, 222, SHOTS.filter((s) => s.key).map((s) => s.key)]],
-  blur: [[139, 151, 6]],
+  blur: [[139, 141, 6], [141, 150, 8], [150, 151, 4]],
   cues: [
     { f: 139, kind: 'whoosh', dur: 0.32, f0: 300, f1: 2600, q: 1.1, gain: -14 },
     { f: 146, kind: 'fire', gain: -3 },
