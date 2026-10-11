@@ -157,3 +157,48 @@ export function drawCellsShared(ctx, cells, y0, y1, { alpha = 1, fill = null } =
   const g = fill || brandGradient(ctx, y0, y1);
   for (const c of cells) drawCell(ctx, c, { fill: g, alpha });
 }
+
+// The concave 4-point "spark" star (✦) that appears in the negative space of the mark when the
+// gap between its cells closes: bounded by four quarter-circle arcs of radius R centred on the
+// diagonal neighbours (cx±R, cy±R). Points at (cx, cy±R), (cx±R, cy). rot rotates about the centre.
+export function sparkPath(cx, cy, R, rot = 0, pinch = 1) {
+  const p = new Path2D();
+  // pinch < 1 pulls the arc centres in (fatter star), > 1 pushes out (thinner)
+  const k = R * pinch;
+  const pts = [[0, -R], [R, 0], [0, R], [-R, 0]];
+  const ctrs = [[k, -k], [k, k], [-k, k], [-k, -k]];
+  const c = Math.cos(rot), s = Math.sin(rot);
+  const tr = ([x, y]) => [cx + x * c - y * s, cy + x * s + y * c];
+  const [x0, y0] = tr(pts[0]);
+  p.moveTo(x0, y0);
+  for (let i = 0; i < 4; i++) {
+    const a = pts[i], b = pts[(i + 1) % 4], o = ctrs[i];
+    // arc around o from a to b (concave toward centre)
+    const r = Math.hypot(a[0] - o[0], a[1] - o[1]);
+    const a0 = Math.atan2(a[1] - o[1], a[0] - o[0]) + rot, a1 = Math.atan2(b[1] - o[1], b[0] - o[0]) + rot;
+    const [ox, oy] = tr(o);
+    p.arc(ox, oy, r, a0, a1, true);
+  }
+  p.closePath();
+  return p;
+}
+
+// The mark rebuilt around a centre with a variable gap g (mark units; 40.816 = the real logo).
+// g = 0 closes the cells together and reveals the ✦ spark in the negative space.
+export const CELL = 204.092, GAP = 40.816;
+export function markCells(cx, cy, s, g = GAP, spread = 0) {
+  const half = (CELL + g) / 2; // offset of each cell centre from the mark centre
+  const out = {};
+  const quad = { ring: [-1, -1], tile: [1, -1], leaf: [-1, 1], pin: [1, 1] };
+  for (const k of MARK_ORDER) {
+    const m = MARK[k], [qx, qy] = quad[k];
+    const ccx = cx + (qx * half + qx * spread) * s, ccy = cy + (qy * half + qy * spread) * s;
+    const c = { x: ccx - (CELL / 2) * s, y: ccy - (CELL / 2) * s, w: CELL * s, h: CELL * s, r: m.r.map((v) => v * s) };
+    if (m.hole) {
+      const hx = (m.hole.x - m.x - CELL / 2) * s, hy = (m.hole.y - m.y - CELL / 2) * s;
+      c.hole = { x: ccx + hx, y: ccy + hy, w: m.hole.w * s, h: m.hole.h * s, r: m.hole.r.map((v) => v * s) };
+    }
+    out[k] = c;
+  }
+  return out;
+}

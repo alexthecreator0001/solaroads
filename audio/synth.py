@@ -245,6 +245,48 @@ INSTR = dict(kick=kick, tick=tick, hat=hat, clap=clap, pop=pop, stone=stone, cra
              thunder=thunder, buzz=buzz, zap=zap, bell=bell, pluck=pluck, bass=bass, pad=pad, riser=riser, impact=impact, shimmer=shimmer)
 
 
+def chord(dur=2.2, root=82.41, bright=1.0):
+    """bright add9 voicing (E by default) - the logo resolve. Sines + soft saws + bell top."""
+    t = t_axis(dur)
+    ratios = [1, 2, 3, 4, 4.5, 5, 6, 8, 9, 12]  # E2 E3 B3 E4 F#4 G#4 B4 E5 F#5 B5
+    x = np.zeros(len(t))
+    for i, r in enumerate(ratios):
+        f = root * r
+        amp = 0.5 / (1 + i * 0.25)
+        x += amp * np.sin(2 * np.pi * f * t + i * 0.7)
+        if i < 6:
+            x += amp * 0.12 * saw(f * 1.002, t)
+    x = bq(x, 'lp', 6000)
+    top = bell(dur, root * 16, bright) * 0.18 + bell(dur, root * 24, bright) * 0.1
+    e = env_adsr(len(t), 0.004, 0.25, 0.55, 0.9, max(0.0, dur - 1.2))
+    return (x * e + top) * 0.5
+
+
+def sub(dur=0.6, f=41.2):
+    t = t_axis(dur)
+    x = np.sin(2 * np.pi * f * t) * env_adsr(len(t), 0.005, 0.1, 0.8, 0.25, max(0.0, dur - 0.36))
+    return x
+
+
+def clunk(dur=0.25):
+    """switch / relay: metallic click + low knock"""
+    t = t_axis(dur)
+    click = bq(noise(len(t)), 'bp', 3800, q=4) * expdecay(len(t), 0.004) * 2.0
+    knock = np.sin(2 * np.pi * 120 * t) * expdecay(len(t), 0.035)
+    ring = np.sin(2 * np.pi * 2650 * t) * expdecay(len(t), 0.02) * 0.2
+    return click + knock + ring
+
+
+def glint(dur=0.5, f=2637.0):
+    """sparkle on glass/panels: two high partials with fast shimmer"""
+    t = t_axis(dur)
+    x = np.sin(2 * np.pi * f * t) + 0.6 * np.sin(2 * np.pi * f * 1.5 * t + 1)
+    return x * expdecay(len(t), 0.09) * (1 + 0.3 * np.sin(2 * np.pi * 31 * t)) * 0.35
+
+
+INSTR.update(chord=chord, sub=sub, clunk=clunk, glint=glint)
+
+
 # ---------------------------------------------------------------- reverb (synthetic stereo IR, FFT convolution)
 
 def reverb_ir(dur=1.6, tau=0.45, lp=6000, seed=11):

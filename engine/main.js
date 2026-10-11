@@ -57,6 +57,7 @@ async function renderFrame(f) {
 }
 
 window.__info = () => ({ width: canvas.width, height: canvas.height, fps: FPS, frames: total, duration: film.duration });
+window.__cues = () => (film.cues ? film.cues() : []);
 window.__frame = async (f) => {
   const img = await renderFrame(f);
   if (wid !== 'preview') await fetch(`/frame?f=${f}&w=${wid}`, { method: 'POST', body: new Blob([img.data]) });

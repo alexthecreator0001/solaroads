@@ -269,7 +269,7 @@
   "out_frame": 242,
   "in_s": 3.65,
   "dur_frames": 24,
-  "content": "Zoetrope: 16 horse-riders on pale disc #EFF0F2 (86%→100% W), anchor dot",
+  "content": "Zoetrope: ≈16 horse-riders on pale disc #EFF0F2 (86%→100% W), anchor dot",
   "motion": "animated on 2s: −22° every 2f (gallop cycle); push 1.012/f constant",
   "transition_in": "hard cut",
   "motion_blur": false

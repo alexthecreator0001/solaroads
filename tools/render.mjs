@@ -97,6 +97,7 @@ async function main() {
 
   const probe = await mkPage('probe');
   const info = await probe.evaluate(() => window.__info());
+  if (args.cues) { fs.writeFileSync(args.cues, JSON.stringify({ duration: info.duration, cues: await probe.evaluate(() => window.__cues()) }, null, 1)); console.log('wrote cues', args.cues); if (args.cuesOnly) { await browser.close(); server.close(); return; } }
   await probe.close();
   const W = info.width, H = info.height, FPS = info.fps;
   console.log(`film: ${info.frames} frames @ ${FPS}fps, ${W}x${H}`);
