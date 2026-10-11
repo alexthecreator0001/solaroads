@@ -63,6 +63,9 @@ Render both: `--q "lang=sk"` (default) and `--q "lang=en"`.
 Contracts in code: `scenes/solaro/spine.js` (`dot()`, `flame(f)`, `bulb()`, `bulbBase()`, `sun()`, `markEnd()`).
 
 ## 4. Engineering conventions
+- **Hard cuts vs motion blur**: with motion blur, `draw(ctx, f)` is called at sub-frame times f = N ± 0.25. Decide every
+  discrete event (image swaps, cuts, inverts, appear/disappear) on the integer frame `F = Math.round(f)` so a blurred
+  frame never blends two shots; use the continuous `f` only for motion.
 - Section module default export: `{ name, f0, f1, needs: [[f0,f1,[keys]]], blur: [[f0,f1,n]], cues: [{f, kind, ...params, gain?, pan?}], async load(), draw(ctx, f) }`.
   `draw` gets the absolute frame `f` (float when motion-blurred). Composed by `scenes/film.js`.
 - Images by registry key (`assets/registry.json`, built by `python3 tools/build_registry.py`): flat = `<name>`, cutout = `<name>.cut`.
@@ -73,4 +76,5 @@ Contracts in code: `scenes/solaro/spine.js` (`dot()`, `flame(f)`, `bulb()`, `bul
   Stills: `--frames 230,250,264 --png out/s3png`.
 - Sound cue kinds (audio/synth.py): kick, tick, hat, clap, pop, stone, crackle, whoosh, fire, thunder, buzz, zap, bell,
   pluck, bass, pad, riser, impact, shimmer, chord, sub, clunk, glint. Put transients 2 f after their picture event.
+  IMPORTANT: `f` in a cue is the FRAME; pass an instrument's frequency as `freq` (e.g. {f: 300, kind: 'bell', freq: 1318}).
 - Do not commit. Do not edit other sections' files or the engine core without saying so in your report.

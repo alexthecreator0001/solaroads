@@ -63,6 +63,8 @@ export function mixCell(a, b, t) {
     rot: lerp(a.rot || 0, b.rot || 0, t),
   };
   for (const k of ['s', 'sx', 'sy']) if (a[k] != null || b[k] != null) out[k] = lerp(a[k] ?? a.s ?? 1, b[k] ?? b.s ?? 1, t);
+  for (const k of ['ssx', 'ssy']) if (a[k] != null || b[k] != null) out[k] = lerp(a[k] ?? 1, b[k] ?? 1, t);
+  if (a.spx != null || b.spx != null) { out.spx = lerp(a.spx ?? a.x + a.w / 2, b.spx ?? b.x + b.w / 2, t); out.spy = lerp(a.spy ?? a.y + a.h / 2, b.spy ?? b.y + b.h / 2, t); }
   if (a.hole || b.hole) {
     const ha = a.hole || holeAtCentre(b.hole ? { ...b.hole } : a);
     const hb = b.hole || holeAtCentre(a.hole ? { ...a.hole } : b);
@@ -100,7 +102,12 @@ export function cellPath2D(c) {
   const local = cellToPath(c);
   const px = c.px ?? c.x + c.w / 2, py = c.py ?? c.y + c.h / 2;
   const sx = c.sx ?? c.s ?? 1, sy = c.sy ?? c.s ?? 1;
-  const m = new DOMMatrix().translate(px, py).rotate(((c.rot || 0) * 180) / Math.PI).scale(sx, sy).translate(-px, -py);
+  let m = new DOMMatrix().translate(px, py).rotate(((c.rot || 0) * 180) / Math.PI).scale(sx, sy).translate(-px, -py);
+  // optional screen-space scale (ssx, ssy) about a screen pivot (spx, spy), applied after rotation
+  if (c.ssx != null || c.ssy != null) {
+    const spx = c.spx ?? c.x + c.w / 2, spy = c.spy ?? c.y + c.h / 2;
+    m = new DOMMatrix().translate(spx, spy).scale(c.ssx ?? 1, c.ssy ?? 1).translate(-spx, -spy).multiply(m);
+  }
   const p = new Path2D();
   p.addPath(local, m);
   return p;

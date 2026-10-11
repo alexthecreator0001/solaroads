@@ -307,7 +307,9 @@ def render(cues, total):
     send = np.zeros((2, n))
     for c in cues:
         kind = c['kind']
-        params = {k: v for k, v in c.items() if k not in ('t', 'kind', 'gain', 'pan', 'verb', 'notes')}
+        params = {k: v for k, v in c.items() if k not in ('t', 'f', 'kind', 'gain', 'pan', 'verb', 'notes', 'section', 'freq')}
+        if 'freq' in c:
+            params['f'] = c['freq']
         x = INSTR[kind](**params)
         g = 10 ** (c.get('gain', 0) / 20)
         pan = c.get('pan', 0.0)

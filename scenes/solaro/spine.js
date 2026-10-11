@@ -26,10 +26,11 @@ export function pin(size, rot, cx = A[0], cy = A[1]) {
 export function flame(f = null, size = FLAME_S, cx = A[0], cy = A[1]) {
   const c = pin(size, deg(-135), cx, cy);
   if (f != null) {
-    c.sy = 1 + 0.035 * (0.6 * Math.sin(0.9 * f) + 0.4 * Math.sin(2.3 * f));
-    c.sx = 1 - 0.015 * Math.sin(1.7 * f + 1);
+    // flicker: rotation wobble about the centre (stays on A) + screen-vertical stretch about the base
     c.rot += deg(2.5 * Math.sin(0.7 * f));
-    c.px = cx; c.py = cy + size * 0.5; // pivot near the flame base
+    c.ssy = 1 + 0.035 * (0.6 * Math.sin(0.9 * f) + 0.4 * Math.sin(2.3 * f));
+    c.ssx = 1 - 0.015 * Math.sin(1.7 * f + 1);
+    c.spx = cx; c.spy = cy + size * 0.5; // the flame's base (bottom of the round end)
   }
   return c;
 }
