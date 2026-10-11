@@ -45,7 +45,14 @@
   "file": "assets/processed/electric-age/electric-age-earth-at-night-europe-africa-black-marble-nasa.jpg",
   "w": 2400,
   "h": 2400,
-  "era": "electric-age"
+  "era": "electric-age",
+  "s5": {
+   "pt": [
+    0.4997,
+    0.49977
+   ],
+   "r": 0.41982
+  }
  },
  "edison-etching-lalauze-wellcome": {
   "file": "assets/processed/electric-age/electric-age-edison-etching-lalauze-wellcome.jpg",
@@ -75,7 +82,14 @@
   "file": "assets/processed/electric-age/electric-age-edison-lamp-new-type-smithsonian.cut.png",
   "w": 716,
   "h": 1685,
-  "era": "electric-age"
+  "era": "electric-age",
+  "s5": {
+   "pt": [
+    0.5,
+    0.3
+   ],
+   "r": 0.45
+  }
  },
  "edison-lamp-new-type-smithsonian": {
   "file": "assets/processed/electric-age/electric-age-edison-lamp-new-type-smithsonian.jpg",
@@ -93,6 +107,12 @@
   "file": "assets/processed/electric-age/electric-age-edison-lamp-stopper-smithsonian.jpg",
   "w": 1800,
   "h": 2400,
+  "era": "electric-age"
+ },
+ "edison-lamps-catalog-poster-1903-loc-s4": {
+  "file": "assets/processed/electric-age/electric-age-edison-lamps-catalog-poster-1903-loc-s4.jpg",
+  "w": 2177,
+  "h": 3200,
   "era": "electric-age"
  },
  "edison-lamps-catalog-poster-1903-loc": {
@@ -143,10 +163,22 @@
   "h": 1600,
   "era": "electric-age"
  },
+ "luna-park-electric-tower-night-1905-loc-s4inv": {
+  "file": "assets/processed/electric-age/electric-age-luna-park-electric-tower-night-1905-loc-s4inv.jpg",
+  "w": 2400,
+  "h": 1698,
+  "era": "electric-age"
+ },
  "luna-park-electric-tower-night-1905-loc": {
   "file": "assets/processed/electric-age/electric-age-luna-park-electric-tower-night-1905-loc.jpg",
   "w": 2400,
   "h": 1963,
+  "era": "electric-age"
+ },
+ "paris-electric-searchlight-concorde-engraving-obi-s4": {
+  "file": "assets/processed/electric-age/electric-age-paris-electric-searchlight-concorde-engraving-obi-s4.jpg",
+  "w": 2400,
+  "h": 1552,
   "era": "electric-age"
  },
  "paris-electric-searchlight-concorde-engraving-obi": {
@@ -197,10 +229,22 @@
   "h": 2400,
   "era": "electric-age"
  },
+ "pearl-street-station-dynamo-room-1882-engraving-ia-s4": {
+  "file": "assets/processed/electric-age/electric-age-pearl-street-station-dynamo-room-1882-engraving-ia-s4.jpg",
+  "w": 2400,
+  "h": 1509,
+  "era": "electric-age"
+ },
  "pearl-street-station-dynamo-room-1882-engraving-ia": {
   "file": "assets/processed/electric-age/electric-age-pearl-street-station-dynamo-room-1882-engraving-ia.jpg",
   "w": 2400,
   "h": 1641,
+  "era": "electric-age"
+ },
+ "pylon-insulators-against-sky-wordpress-s4": {
+  "file": "assets/processed/electric-age/electric-age-pylon-insulators-against-sky-wordpress-s4.jpg",
+  "w": 1800,
+  "h": 2400,
   "era": "electric-age"
  },
  "pylon-insulators-against-sky-wordpress": {
@@ -209,11 +253,24 @@
   "h": 2400,
   "era": "electric-age"
  },
+ "pylon-silhouette-dusk-sky-wordpress-s4": {
+  "file": "assets/processed/electric-age/electric-age-pylon-silhouette-dusk-sky-wordpress-s4.jpg",
+  "w": 1800,
+  "h": 2400,
+  "era": "electric-age"
+ },
  "pylon-silhouette-dusk-sky-wordpress": {
   "file": "assets/processed/electric-age/electric-age-pylon-silhouette-dusk-sky-wordpress.jpg",
   "w": 1800,
   "h": 2400,
-  "era": "electric-age"
+  "era": "electric-age",
+  "s5": {
+   "pt": [
+    0.5,
+    0.15
+   ],
+   "r": 0.3
+  }
  },
  "pylon-vertical-pa-nj-interconnection-habs-loc": {
   "file": "assets/processed/electric-age/electric-age-pylon-vertical-pa-nj-interconnection-habs-loc.jpg",
@@ -251,6 +308,12 @@
   "h": 1574,
   "era": "electric-age"
  },
+ "tesla-colorado-springs-sparks-wellcome-s4": {
+  "file": "assets/processed/electric-age/electric-age-tesla-colorado-springs-sparks-wellcome-s4.jpg",
+  "w": 2400,
+  "h": 1404,
+  "era": "electric-age"
+ },
  "tesla-colorado-springs-sparks-wellcome": {
   "file": "assets/processed/electric-age/electric-age-tesla-colorado-springs-sparks-wellcome.jpg",
   "w": 2400,
@@ -269,6 +332,12 @@
   "h": 1800,
   "era": "electric-age"
  },
+ "woman-dressed-in-light-bulbs-cabinet-card-met-s4": {
+  "file": "assets/processed/electric-age/electric-age-woman-dressed-in-light-bulbs-cabinet-card-met-s4.jpg",
+  "w": 1440,
+  "h": 1901,
+  "era": "electric-age"
+ },
  "woman-dressed-in-light-bulbs-cabinet-card-met": {
   "file": "assets/processed/electric-age/electric-age-woman-dressed-in-light-bulbs-cabinet-card-met.jpg",
   "w": 1583,
@@ -285,6 +354,12 @@
   "file": "assets/processed/electric-age/electric-age-xray-tube-on-stand-wellcome.jpg",
   "w": 2400,
   "h": 1714,
+  "era": "electric-age"
+ },
+ "yablochkov-candle-arc-lamp-engraving-obi-s4": {
+  "file": "assets/processed/electric-age/electric-age-yablochkov-candle-arc-lamp-engraving-obi-s4.jpg",
+  "w": 1164,
+  "h": 2088,
   "era": "electric-age"
  },
  "yablochkov-candle-arc-lamp-engraving-obi": {
@@ -317,6 +392,16 @@
   "h": 1024,
   "era": "lightning-early"
  },
+ "bolt-jennings-1882-loc-s3inv": {
+  "file": "assets/processed/lightning-early/lightning-early-bolt-jennings-1882-loc-s3inv.jpg",
+  "w": 2638,
+  "h": 2054,
+  "era": "lightning-early",
+  "focus": [
+   0.86,
+   0.5
+  ]
+ },
  "bolt-jennings-1882-loc": {
   "file": "assets/processed/lightning-early/lightning-early-bolt-jennings-1882-loc.jpg",
   "w": 2400,
@@ -328,6 +413,16 @@
   "w": 1280,
   "h": 1024,
   "era": "lightning-early"
+ },
+ "bolt-spokane-1914-loc-s3inv": {
+  "file": "assets/processed/lightning-early/lightning-early-bolt-spokane-1914-loc-s3inv.jpg",
+  "w": 2000,
+  "h": 1968,
+  "era": "lightning-early",
+  "focus": [
+   0.62,
+   0.5
+  ]
  },
  "bolt-spokane-1914-loc": {
   "file": "assets/processed/lightning-early/lightning-early-bolt-spokane-1914-loc.jpg",
@@ -345,6 +440,12 @@
   "file": "assets/processed/lightning-early/lightning-early-faraday-iron-filings-wellcome.jpg",
   "w": 1712,
   "h": 2400,
+  "era": "lightning-early"
+ },
+ "faraday-sparking-coil-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-faraday-sparking-coil-wellcome-s3.jpg",
+  "w": 711,
+  "h": 743,
   "era": "lightning-early"
  },
  "faraday-sparking-coil-wellcome.cut": {
@@ -365,6 +466,16 @@
   "h": 1480,
   "era": "lightning-early"
  },
+ "franklin-kite-currier-ives-loc-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-franklin-kite-currier-ives-loc-s3.jpg",
+  "w": 4824,
+  "h": 2918,
+  "era": "lightning-early",
+  "focus": [
+   0.45,
+   0.5
+  ]
+ },
  "franklin-kite-currier-ives-loc": {
   "file": "assets/processed/lightning-early/lightning-early-franklin-kite-currier-ives-loc.jpg",
   "w": 2400,
@@ -382,6 +493,17 @@
   "w": 1536,
   "h": 1333,
   "era": "lightning-early"
+ },
+ "galvani-frog-hand-arc-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-galvani-frog-hand-arc-wellcome-s3.jpg",
+  "w": 934,
+  "h": 752,
+  "era": "lightning-early",
+  "focus": [
+   0.45,
+   0.6
+  ],
+  "zoom": 1.0
  },
  "galvani-frog-hand-arc-wellcome": {
   "file": "assets/processed/lightning-early/lightning-early-galvani-frog-hand-arc-wellcome.jpg",
@@ -401,11 +523,31 @@
   "h": 1771,
   "era": "lightning-early"
  },
+ "gray-wheler-1729-figuier-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-gray-wheler-1729-figuier-s3.jpg",
+  "w": 1660,
+  "h": 1940,
+  "era": "lightning-early",
+  "focus": [
+   0.75,
+   0.5
+  ]
+ },
  "gray-wheler-1729-figuier": {
   "file": "assets/processed/lightning-early/lightning-early-gray-wheler-1729-figuier.jpg",
   "w": 1730,
   "h": 1970,
   "era": "lightning-early"
+ },
+ "kite-romas-1753-figuier-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-kite-romas-1753-figuier-s3.jpg",
+  "w": 1473,
+  "h": 1938,
+  "era": "lightning-early",
+  "focus": [
+   0.55,
+   0.5
+  ]
  },
  "kite-romas-1753-figuier": {
   "file": "assets/processed/lightning-early/lightning-early-kite-romas-1753-figuier.jpg",
@@ -413,11 +555,33 @@
   "h": 2010,
   "era": "lightning-early"
  },
+ "leyden-battery-64-jars-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-leyden-battery-64-jars-wellcome-s3.jpg",
+  "w": 3638,
+  "h": 1601,
+  "era": "lightning-early",
+  "focus": [
+   0.45,
+   0.4
+  ],
+  "zoom": 1.2
+ },
  "leyden-battery-64-jars-wellcome": {
   "file": "assets/processed/lightning-early/lightning-early-leyden-battery-64-jars-wellcome.jpg",
   "w": 2400,
   "h": 1500,
   "era": "lightning-early"
+ },
+ "leyden-jar-battery-smithsonian-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-leyden-jar-battery-smithsonian-s3.jpg",
+  "w": 1880,
+  "h": 1616,
+  "era": "lightning-early",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "zoom": 1.0
  },
  "leyden-jar-battery-smithsonian.cut": {
   "file": "assets/processed/lightning-early/lightning-early-leyden-jar-battery-smithsonian.cut.png",
@@ -437,6 +601,17 @@
   "h": 1548,
   "era": "lightning-early"
  },
+ "leyden-jars-three-galvani-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-leyden-jars-three-galvani-wellcome-s3.jpg",
+  "w": 661,
+  "h": 818,
+  "era": "lightning-early",
+  "focus": [
+   0.5,
+   0.55
+  ],
+  "zoom": 1.0
+ },
  "leyden-jars-three-galvani-wellcome.cut": {
   "file": "assets/processed/lightning-early/lightning-early-leyden-jars-three-galvani-wellcome.cut.png",
   "w": 977,
@@ -449,11 +624,33 @@
   "h": 1514,
   "era": "lightning-early"
  },
+ "leyden-nollet-spark-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-leyden-nollet-spark-wellcome-s3.jpg",
+  "w": 1945,
+  "h": 1944,
+  "era": "lightning-early",
+  "focus": [
+   0.555,
+   0.555
+  ],
+  "zoom": 1.2
+ },
  "leyden-nollet-spark-wellcome": {
   "file": "assets/processed/lightning-early/lightning-early-leyden-nollet-spark-wellcome.jpg",
   "w": 2048,
   "h": 2400,
   "era": "lightning-early"
+ },
+ "machine-cuthbertson-disc-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-machine-cuthbertson-disc-wellcome-s3.jpg",
+  "w": 940,
+  "h": 940,
+  "era": "lightning-early",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "zoom": 1.14
  },
  "machine-cuthbertson-disc-wellcome": {
   "file": "assets/processed/lightning-early/lightning-early-machine-cuthbertson-disc-wellcome.jpg",
@@ -461,11 +658,33 @@
   "h": 2400,
   "era": "lightning-early"
  },
+ "machine-guericke-sulfur-globe-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-machine-guericke-sulfur-globe-wellcome-s3.jpg",
+  "w": 941,
+  "h": 1227,
+  "era": "lightning-early",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "zoom": 1.0
+ },
  "machine-guericke-sulfur-globe-wellcome": {
   "file": "assets/processed/lightning-early/lightning-early-machine-guericke-sulfur-globe-wellcome.jpg",
   "w": 2400,
   "h": 1377,
   "era": "lightning-early"
+ },
+ "machine-hauksbee-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-machine-hauksbee-wellcome-s3.jpg",
+  "w": 660,
+  "h": 660,
+  "era": "lightning-early",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "zoom": 1.14
  },
  "machine-hauksbee-wellcome.cut": {
   "file": "assets/processed/lightning-early/lightning-early-machine-hauksbee-wellcome.cut.png",
@@ -509,11 +728,34 @@
   "h": 2020,
   "era": "lightning-early"
  },
+ "richmann-killed-engraving-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-richmann-killed-engraving-wellcome-s3.jpg",
+  "w": 1945,
+  "h": 2997,
+  "era": "lightning-early",
+  "focus": [
+   0.6,
+   0.5
+  ]
+ },
  "richmann-killed-engraving-wellcome": {
   "file": "assets/processed/lightning-early/lightning-early-richmann-killed-engraving-wellcome.jpg",
   "w": 1515,
   "h": 2400,
   "era": "lightning-early"
+ },
+ "s5-nollet": {
+  "file": "assets/processed/lightning-early/lightning-early-s5-nollet.jpg",
+  "w": 1520,
+  "h": 1520,
+  "era": "lightning-early",
+  "s5": {
+   "pt": [
+    0.50041,
+    0.50037
+   ],
+   "r": 0.20016
+  }
  },
  "spark-discharge-figuier": {
   "file": "assets/processed/lightning-early/lightning-early-spark-discharge-figuier.jpg",
@@ -521,11 +763,31 @@
   "h": 1795,
   "era": "lightning-early"
  },
+ "strike-building-engraving-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-strike-building-engraving-wellcome-s3.jpg",
+  "w": 2922,
+  "h": 2072,
+  "era": "lightning-early",
+  "focus": [
+   0.62,
+   0.5
+  ]
+ },
  "strike-building-engraving-wellcome": {
   "file": "assets/processed/lightning-early/lightning-early-strike-building-engraving-wellcome.jpg",
   "w": 2400,
   "h": 1698,
   "era": "lightning-early"
+ },
+ "suspended-boy-hausen-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-suspended-boy-hausen-wellcome-s3.jpg",
+  "w": 3019,
+  "h": 3414,
+  "era": "lightning-early",
+  "focus": [
+   0.4,
+   0.5
+  ]
  },
  "suspended-boy-hausen-wellcome": {
   "file": "assets/processed/lightning-early/lightning-early-suspended-boy-hausen-wellcome.jpg",
@@ -563,6 +825,17 @@
   "h": 2400,
   "era": "lightning-early"
  },
+ "volta-pile-griffin-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-volta-pile-griffin-wellcome-s3.jpg",
+  "w": 923,
+  "h": 1252,
+  "era": "lightning-early",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "zoom": 1.0
+ },
  "volta-pile-griffin-wellcome.cut": {
   "file": "assets/processed/lightning-early/lightning-early-volta-pile-griffin-wellcome.cut.png",
   "w": 939,
@@ -575,11 +848,29 @@
   "h": 2400,
   "era": "lightning-early"
  },
+ "volta-pile-original-wellcome-s3": {
+  "file": "assets/processed/lightning-early/lightning-early-volta-pile-original-wellcome-s3.jpg",
+  "w": 1008,
+  "h": 1373,
+  "era": "lightning-early",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "zoom": 1.0
+ },
  "volta-pile-original-wellcome.cut": {
   "file": "assets/processed/lightning-early/lightning-early-volta-pile-original-wellcome.cut.png",
   "w": 579,
   "h": 1939,
-  "era": "lightning-early"
+  "era": "lightning-early",
+  "s5": {
+   "pt": [
+    0.5,
+    0.45
+   ],
+   "r": 0.5
+  }
  },
  "volta-pile-original-wellcome": {
   "file": "assets/processed/lightning-early/lightning-early-volta-pile-original-wellcome.jpg",
@@ -621,7 +912,15 @@
   "file": "assets/processed/solaro/ev_type2_plug_vertical.jpg",
   "w": 1237,
   "h": 2200,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.42,
+    0.45,
+    1.25
+   ]
+  ],
+  "s6kind": "kit"
  },
  "solaro-ev_wallbox_installed": {
   "file": "assets/processed/solaro/ev_wallbox_installed.jpg",
@@ -633,7 +932,20 @@
   "file": "assets/processed/solaro/house_bluesky_panels.jpg",
   "w": 1600,
   "h": 1200,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.42,
+    0.45,
+    1.15
+   ],
+   [
+    0.45,
+    0.35,
+    2.0
+   ]
+  ],
+  "s6kind": "house"
  },
  "solaro-house_bungalow_pool_panels": {
   "file": "assets/processed/solaro/house_bungalow_pool_panels.jpg",
@@ -645,31 +957,86 @@
   "file": "assets/processed/solaro/house_cream_lowangle_panels.jpg",
   "w": 2200,
   "h": 1650,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.6,
+    0.24,
+    1.7
+   ]
+  ],
+  "s6kind": "house"
  },
  "solaro-house_orange_facade_panels_wide": {
   "file": "assets/processed/solaro/house_orange_facade_panels_wide.jpg",
   "w": 2200,
   "h": 1238,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.5,
+    0.35,
+    1.1
+   ],
+   [
+    0.75,
+    0.3,
+    2.0
+   ]
+  ],
+  "s6kind": "house"
  },
  "solaro-house_pergola_panel_canopy": {
   "file": "assets/processed/solaro/house_pergola_panel_canopy.jpg",
   "w": 1280,
   "h": 960,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.55,
+    0.42,
+    1.1
+   ],
+   [
+    0.55,
+    0.3,
+    1.9
+   ]
+  ],
+  "s6kind": "house"
  },
  "solaro-house_pergola_roof_panels": {
   "file": "assets/processed/solaro/house_pergola_roof_panels.jpg",
   "w": 2200,
   "h": 1650,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.6,
+    0.5,
+    1.8
+   ]
+  ],
+  "s6kind": "house"
  },
  "solaro-house_redroof_panels_sunset": {
   "file": "assets/processed/solaro/house_redroof_panels_sunset.jpg",
   "w": 2200,
   "h": 1650,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.42,
+    0.5,
+    1.25
+   ],
+   [
+    0.48,
+    0.4,
+    2.2
+   ]
+  ],
+  "s6kind": "house"
  },
  "solaro-house_villa_garden_panels": {
   "file": "assets/processed/solaro/house_villa_garden_panels.jpg",
@@ -693,7 +1060,20 @@
   "file": "assets/processed/solaro/house_white_ladder_install.jpg",
   "w": 2200,
   "h": 1650,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.55,
+    0.45,
+    1.05
+   ],
+   [
+    0.7,
+    0.35,
+    1.8
+   ]
+  ],
+  "s6kind": "house"
  },
  "solaro-hq_bardejov_building": {
   "file": "assets/processed/solaro/hq_bardejov_building.jpg",
@@ -735,13 +1115,29 @@
   "file": "assets/processed/solaro/inverter_huawei_solaro_sticker.jpg",
   "w": 2200,
   "h": 1650,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.8,
+    0.45,
+    1.7
+   ]
+  ],
+  "s6kind": "kit"
  },
  "solaro-inverter_on_osb_board": {
   "file": "assets/processed/solaro/inverter_on_osb_board.jpg",
   "w": 1200,
   "h": 1600,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.5,
+    0.42,
+    1.0
+   ]
+  ],
+  "s6kind": "kit"
  },
  "solaro-inverter_solax_on_wall.cut": {
   "file": "assets/processed/solaro/inverter_solax_on_wall.cut.png",
@@ -771,43 +1167,120 @@
   "file": "assets/processed/solaro/roof_dusk_dramatic_vertical.jpg",
   "w": 1200,
   "h": 1600,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.5,
+    0.6,
+    1.3
+   ]
+  ],
+  "s6kind": "roof"
  },
  "solaro-roof_flat_array_blocks": {
   "file": "assets/processed/solaro/roof_flat_array_blocks.jpg",
   "w": 2048,
   "h": 1536,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.55,
+    0.55,
+    1.0
+   ],
+   [
+    0.45,
+    0.72,
+    1.8
+   ]
+  ],
+  "s6kind": "roof"
  },
  "solaro-roof_flat_array_blocks_b": {
   "file": "assets/processed/solaro/roof_flat_array_blocks_b.jpg",
   "w": 1411,
   "h": 1058,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.3,
+    0.55,
+    1.1
+   ],
+   [
+    0.62,
+    0.62,
+    1.6
+   ]
+  ],
+  "s6kind": "roof"
  },
  "solaro-roof_long_panel_row_vertical": {
   "file": "assets/processed/solaro/roof_long_panel_row_vertical.jpg",
   "w": 1200,
   "h": 1600,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.5,
+    0.5,
+    1.0
+   ],
+   [
+    0.6,
+    0.72,
+    1.7
+   ]
+  ],
+  "s6kind": "roof"
  },
  "solaro-roof_orange_tiles_clouds": {
   "file": "assets/processed/solaro/roof_orange_tiles_clouds.jpg",
   "w": 1600,
   "h": 1200,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.42,
+    0.62,
+    1.25
+   ],
+   [
+    0.3,
+    0.55,
+    1.7
+   ]
+  ],
+  "s6kind": "roof"
  },
  "solaro-roof_slate_panels_vertical": {
   "file": "assets/processed/solaro/roof_slate_panels_vertical.jpg",
   "w": 1650,
   "h": 2200,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.5,
+    0.62,
+    1.0
+   ],
+   [
+    0.55,
+    0.68,
+    1.9
+   ]
+  ],
+  "s6kind": "roof"
  },
  "solaro-roof_tatras_dramatic_sky_vertical": {
   "file": "assets/processed/solaro/roof_tatras_dramatic_sky_vertical.jpg",
   "w": 1645,
   "h": 2200,
-  "era": "solaro"
+  "era": "solaro",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  "solaro-switchboard_dc_orange_open.cut": {
   "file": "assets/processed/solaro/switchboard_dc_orange_open.cut.png",
@@ -819,7 +1292,15 @@
   "file": "assets/processed/solaro/switchboard_dc_orange_open.jpg",
   "w": 1170,
   "h": 1197,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.5,
+    0.5,
+    1.05
+   ]
+  ],
+  "s6kind": "kit"
  },
  "solaro-switchboard_dc_orange_wide": {
   "file": "assets/processed/solaro/switchboard_dc_orange_wide.jpg",
@@ -837,7 +1318,15 @@
   "file": "assets/processed/solaro/van_solaro_branded_house.jpg",
   "w": 2200,
   "h": 1016,
-  "era": "solaro"
+  "era": "solaro",
+  "s6crop": [
+   [
+    0.4,
+    0.55,
+    1.0
+   ]
+  ],
+  "s6kind": "house"
  },
  "apollo-sun-goltzius-met": {
   "file": "assets/processed/spark-fire/spark-fire-apollo-sun-goltzius-met.jpg",
@@ -849,6 +1338,12 @@
   "file": "assets/processed/spark-fire/spark-fire-aten-rays-hands-relief-met.jpg",
   "w": 2400,
   "h": 1625,
+  "era": "spark-fire"
+ },
+ "bow-drill-clean-s1s2": {
+  "file": "assets/processed/spark-fire/spark-fire-bow-drill-clean-s1s2.jpg",
+  "w": 2400,
+  "h": 1572,
   "era": "spark-fire"
  },
  "bow-drill-madagascar-wellcome": {
@@ -905,6 +1400,12 @@
   "h": 1000,
   "era": "spark-fire"
  },
+ "fire-drill-clean-s1s2": {
+  "file": "assets/processed/spark-fire/spark-fire-fire-drill-clean-s1s2.jpg",
+  "w": 1610,
+  "h": 1180,
+  "era": "spark-fire"
+ },
  "fire-pistons-hough1928": {
   "file": "assets/processed/spark-fire/spark-fire-fire-pistons-hough1928.jpg",
   "w": 1540,
@@ -951,7 +1452,14 @@
   "file": "assets/processed/spark-fire/spark-fire-flint-nodule-3d-render-b-zenodo.jpg",
   "w": 2225,
   "h": 1488,
-  "era": "spark-fire"
+  "era": "spark-fire",
+  "s5": {
+   "pt": [
+    0.5,
+    0.55
+   ],
+   "r": 0.3
+  }
  },
  "flint-nodule-3d-render-c-zenodo": {
   "file": "assets/processed/spark-fire/spark-fire-flint-nodule-3d-render-c-zenodo.jpg",
@@ -969,6 +1477,12 @@
   "file": "assets/processed/spark-fire/spark-fire-flint-nodule-kulturparken.jpg",
   "w": 2400,
   "h": 1678,
+  "era": "spark-fire"
+ },
+ "flint-steel-ring-clean-s1s2": {
+  "file": "assets/processed/spark-fire/spark-fire-flint-steel-ring-clean-s1s2.jpg",
+  "w": 1510,
+  "h": 1170,
   "era": "spark-fire"
  },
  "flint-striker-islamic-met.cut": {
@@ -999,7 +1513,11 @@
   "file": "assets/processed/spark-fire/spark-fire-hand-of-god-rodin-met.cut.png",
   "w": 1510,
   "h": 1743,
-  "era": "spark-fire"
+  "era": "spark-fire",
+  "pt": [
+   0.63,
+   0.17
+  ]
  },
  "hand-of-god-rodin-met": {
   "file": "assets/processed/spark-fire/spark-fire-hand-of-god-rodin-met.jpg",
@@ -1011,7 +1529,11 @@
   "file": "assets/processed/spark-fire/spark-fire-hand-reaching-cast-met.cut.png",
   "w": 1875,
   "h": 609,
-  "era": "spark-fire"
+  "era": "spark-fire",
+  "pt": [
+   0.988,
+   0.505
+  ]
  },
  "hand-reaching-cast-met": {
   "file": "assets/processed/spark-fire/spark-fire-hand-reaching-cast-met.jpg",
@@ -1047,7 +1569,11 @@
   "file": "assets/processed/spark-fire/spark-fire-handaxe-red-acheulean-met.cut.png",
   "w": 624,
   "h": 1379,
-  "era": "spark-fire"
+  "era": "spark-fire",
+  "pt": [
+   0.5,
+   0.778
+  ]
  },
  "handaxe-red-acheulean-met": {
   "file": "assets/processed/spark-fire/spark-fire-handaxe-red-acheulean-met.jpg",
@@ -1059,7 +1585,14 @@
   "file": "assets/processed/spark-fire/spark-fire-handaxe-teardrop-acheulean-met.cut.png",
   "w": 722,
   "h": 1292,
-  "era": "spark-fire"
+  "era": "spark-fire",
+  "s5": {
+   "pt": [
+    0.5,
+    0.56
+   ],
+   "r": 0.5
+  }
  },
  "handaxe-teardrop-acheulean-met": {
   "file": "assets/processed/spark-fire/spark-fire-handaxe-teardrop-acheulean-met.jpg",
@@ -1067,11 +1600,31 @@
   "h": 2400,
   "era": "spark-fire"
  },
+ "handaxe-teardrop-soft-s1s2.cut": {
+  "file": "assets/processed/spark-fire/spark-fire-handaxe-teardrop-soft-s1s2.cut.png",
+  "w": 722,
+  "h": 1292,
+  "era": "spark-fire",
+  "pt": [
+   0.5,
+   0.737
+  ]
+ },
  "handaxes-nine-bifaces-met": {
   "file": "assets/processed/spark-fire/spark-fire-handaxes-nine-bifaces-met.jpg",
   "w": 2400,
   "h": 1538,
   "era": "spark-fire"
+ },
+ "hooke-fig1-s1s2": {
+  "file": "assets/processed/spark-fire/spark-fire-hooke-fig1-s1s2.jpg",
+  "w": 2400,
+  "h": 1925,
+  "era": "spark-fire",
+  "pt": [
+   0.553,
+   0.478
+  ]
  },
  "hooke-sparks-flint-steel-micrographia-wellcome": {
   "file": "assets/processed/spark-fire/spark-fire-hooke-sparks-flint-steel-micrographia-wellcome.jpg",
@@ -1085,11 +1638,25 @@
   "h": 2015,
   "era": "spark-fire"
  },
+ "ignis-hires-s1s2": {
+  "file": "assets/processed/spark-fire/spark-fire-ignis-hires-s1s2.jpg",
+  "w": 3531,
+  "h": 2965,
+  "era": "spark-fire",
+  "pt": [
+   0.27,
+   0.213
+  ]
+ },
  "lantern-pierced-tin-met.cut": {
   "file": "assets/processed/spark-fire/spark-fire-lantern-pierced-tin-met.cut.png",
   "w": 612,
   "h": 1688,
-  "era": "spark-fire"
+  "era": "spark-fire",
+  "pt": [
+   0.5,
+   0.6
+  ]
  },
  "lantern-pierced-tin-met": {
   "file": "assets/processed/spark-fire/spark-fire-lantern-pierced-tin-met.jpg",
@@ -1097,11 +1664,21 @@
   "h": 2400,
   "era": "spark-fire"
  },
+ "nine-bifaces-s1s2.cut": {
+  "file": "assets/processed/spark-fire/spark-fire-nine-bifaces-s1s2.cut.png",
+  "w": 2509,
+  "h": 1349,
+  "era": "spark-fire"
+ },
  "oil-lamp-bronze-roman-cleveland.cut": {
   "file": "assets/processed/spark-fire/spark-fire-oil-lamp-bronze-roman-cleveland.cut.png",
   "w": 1222,
   "h": 1107,
-  "era": "spark-fire"
+  "era": "spark-fire",
+  "pt": [
+   0.07,
+   0.705
+  ]
  },
  "oil-lamp-bronze-roman-cleveland": {
   "file": "assets/processed/spark-fire/spark-fire-oil-lamp-bronze-roman-cleveland.jpg",
@@ -1157,17 +1734,56 @@
   "h": 2400,
   "era": "spark-fire"
  },
+ "prometheus-torch-hires-s1s2": {
+  "file": "assets/processed/spark-fire/spark-fire-prometheus-torch-hires-s1s2.jpg",
+  "w": 1689,
+  "h": 3656,
+  "era": "spark-fire",
+  "pt": [
+   0.293,
+   0.165
+  ]
+ },
  "prometheus-torch-to-sun-met": {
   "file": "assets/processed/spark-fire/spark-fire-prometheus-torch-to-sun-met.jpg",
   "w": 1109,
   "h": 2400,
   "era": "spark-fire"
  },
+ "s5-lamp": {
+  "file": "assets/processed/spark-fire/spark-fire-s5-lamp.jpg",
+  "w": 1040,
+  "h": 1040,
+  "era": "spark-fire",
+  "s5": {
+   "pt": [
+    0.5,
+    0.5
+   ],
+   "r": 0.21154
+  }
+ },
+ "strike-stones-clean-s1s2": {
+  "file": "assets/processed/spark-fire/spark-fire-strike-stones-clean-s1s2.jpg",
+  "w": 1930,
+  "h": 2290,
+  "era": "spark-fire"
+ },
+ "tinderbox-eng-clean-s1s2": {
+  "file": "assets/processed/spark-fire/spark-fire-tinderbox-eng-clean-s1s2.jpg",
+  "w": 2090,
+  "h": 1000,
+  "era": "spark-fire"
+ },
  "tinderbox-met.cut": {
   "file": "assets/processed/spark-fire/spark-fire-tinderbox-met.cut.png",
   "w": 1722,
   "h": 738,
-  "era": "spark-fire"
+  "era": "spark-fire",
+  "pt": [
+   0.712,
+   0.012
+  ]
  },
  "tinderbox-met": {
   "file": "assets/processed/spark-fire/spark-fire-tinderbox-met.jpg",
@@ -1175,11 +1791,28 @@
   "h": 1830,
   "era": "spark-fire"
  },
+ "torch-arm-hires-s1s2.cut": {
+  "file": "assets/processed/spark-fire/spark-fire-torch-arm-hires-s1s2.cut.png",
+  "w": 3089,
+  "h": 2016,
+  "era": "spark-fire",
+  "pt": [
+   0.868,
+   0.012
+  ]
+ },
  "torch-bearing-arm-met.cut": {
   "file": "assets/processed/spark-fire/spark-fire-torch-bearing-arm-met.cut.png",
   "w": 1551,
   "h": 1016,
-  "era": "spark-fire"
+  "era": "spark-fire",
+  "s5": {
+   "pt": [
+    0.82,
+    0.14
+   ],
+   "r": 0.12
+  }
  },
  "torch-bearing-arm-met": {
   "file": "assets/processed/spark-fire/spark-fire-torch-bearing-arm-met.jpg",
@@ -1227,7 +1860,14 @@
   "file": "assets/processed/sun-solar/sun-solar-cells-window-grid-fraunhofer-flickr.jpg",
   "w": 2400,
   "h": 1800,
-  "era": "sun-solar"
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.5,
+    0.5
+   ],
+   "r": 0.3
+  }
  },
  "early-module-round-cells-dark-tekniska.cut": {
   "file": "assets/processed/sun-solar/sun-solar-early-module-round-cells-dark-tekniska.cut.png",
@@ -1263,7 +1903,14 @@
   "file": "assets/processed/sun-solar/sun-solar-eclipse-2017-corona-nasa.jpg",
   "w": 2400,
   "h": 1904,
-  "era": "sun-solar"
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.49513,
+    0.50772
+   ],
+   "r": 0.17579
+  }
  },
  "eclipse-2017-diamond-ring-nasa": {
   "file": "assets/processed/sun-solar/sun-solar-eclipse-2017-diamond-ring-nasa.jpg",
@@ -1353,7 +2000,14 @@
   "file": "assets/processed/sun-solar/sun-solar-iss-solar-array-sunburst-nasa.jpg",
   "w": 2400,
   "h": 1594,
-  "era": "sun-solar"
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.652,
+    0.538
+   ],
+   "r": 0.05
+  }
  },
  "kircher-burning-lens-beam-wellcome": {
   "file": "assets/processed/sun-solar/sun-solar-kircher-burning-lens-beam-wellcome.jpg",
@@ -1365,13 +2019,27 @@
   "file": "assets/processed/sun-solar/sun-solar-kircher-sun-corpus-solis-plate-wellcome.jpg",
   "w": 2400,
   "h": 2137,
-  "era": "sun-solar"
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.50225,
+    0.52462
+   ],
+   "r": 0.29841
+  }
  },
  "mouchot-solar-engine-paris-1878-tekniska": {
   "file": "assets/processed/sun-solar/sun-solar-mouchot-solar-engine-paris-1878-tekniska.jpg",
   "w": 2400,
   "h": 1653,
-  "era": "sun-solar"
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.62,
+    0.38
+   ],
+   "r": 0.15
+  }
  },
  "panel-surface-diagonal-usda-flickr": {
   "file": "assets/processed/sun-solar/sun-solar-panel-surface-diagonal-usda-flickr.jpg",
@@ -1384,6 +2052,58 @@
   "w": 2400,
   "h": 1594,
   "era": "sun-solar"
+ },
+ "s5-course": {
+  "file": "assets/processed/sun-solar/sun-solar-s5-course.jpg",
+  "w": 1850,
+  "h": 1850,
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.50032,
+    0.50077
+   ],
+   "r": 0.47322
+  }
+ },
+ "s5-degraag": {
+  "file": "assets/processed/sun-solar/sun-solar-s5-degraag.jpg",
+  "w": 1520,
+  "h": 1520,
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.525,
+    0.615
+   ],
+   "r": 0.16
+  }
+ },
+ "s5-round-cells": {
+  "file": "assets/processed/sun-solar/sun-solar-s5-round-cells.jpg",
+  "w": 1640,
+  "h": 1640,
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.49948,
+    0.50069
+   ],
+   "r": 0.09504
+  }
+ },
+ "s5-scheiner-grid": {
+  "file": "assets/processed/sun-solar/sun-solar-s5-scheiner-grid.jpg",
+  "w": 1520,
+  "h": 1520,
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.49855,
+    0.50214
+   ],
+   "r": 0.08536
+  }
  },
  "scheiner-1612-sunspot-discs-grid-freiburg": {
   "file": "assets/processed/sun-solar/sun-solar-scheiner-1612-sunspot-discs-grid-freiburg.jpg",
@@ -1401,7 +2121,14 @@
   "file": "assets/processed/sun-solar/sun-solar-scheiner-rosa-ursina-grid-disc-ia.jpg",
   "w": 1719,
   "h": 2400,
-  "era": "sun-solar"
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.49787,
+    0.41131
+   ],
+   "r": 0.42275
+  }
  },
  "scheiner-rosa-ursina-helioscope-ia": {
   "file": "assets/processed/sun-solar/sun-solar-scheiner-rosa-ursina-helioscope-ia.jpg",
@@ -1419,13 +2146,27 @@
   "file": "assets/processed/sun-solar/sun-solar-sdo-aia171-corona-loops-2014-nasa.jpg",
   "w": 2400,
   "h": 2400,
-  "era": "sun-solar"
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.50099,
+    0.49937
+   ],
+   "r": 0.47764
+  }
  },
  "sdo-hmi-white-light-giant-sunspot-2014-nasa": {
   "file": "assets/processed/sun-solar/sun-solar-sdo-hmi-white-light-giant-sunspot-2014-nasa.jpg",
   "w": 2400,
   "h": 2400,
-  "era": "sun-solar"
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.49957,
+    0.4999
+   ],
+   "r": 0.46958
+  }
  },
  "skylab-solar-wings-black-sky-nasa": {
   "file": "assets/processed/sun-solar/sun-solar-skylab-solar-wings-black-sky-nasa.jpg",
@@ -1497,7 +2238,14 @@
   "file": "assets/processed/sun-solar/sun-solar-sundial-universal-ring-flat-met.jpg",
   "w": 1988,
   "h": 1988,
-  "era": "sun-solar"
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.50451,
+    0.47813
+   ],
+   "r": 0.39899
+  }
  },
  "sunflower-against-sky-unsplash": {
   "file": "assets/processed/sun-solar/sun-solar-sunflower-against-sky-unsplash.jpg",
@@ -1521,7 +2269,14 @@
   "file": "assets/processed/sun-solar/sun-solar-sunflower-head-black-bg-1-wellcome.cut.png",
   "w": 1333,
   "h": 1399,
-  "era": "sun-solar"
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.4742,
+    0.38606
+   ],
+   "r": 0.17684
+  }
  },
  "sunflower-head-black-bg-1-wellcome": {
   "file": "assets/processed/sun-solar/sun-solar-sunflower-head-black-bg-1-wellcome.jpg",
@@ -1533,7 +2288,14 @@
   "file": "assets/processed/sun-solar/sun-solar-sunflower-head-frontal-unsplash.jpg",
   "w": 2400,
   "h": 1600,
-  "era": "sun-solar"
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.48899,
+    0.47711
+   ],
+   "r": 0.23675
+  }
  },
  "sunflower-macro-spiral-unsplash": {
   "file": "assets/processed/sun-solar/sun-solar-sunflower-macro-spiral-unsplash.jpg",
@@ -1599,7 +2361,14 @@
   "file": "assets/processed/sun-solar/sun-solar-trouvelot-total-eclipse-1878-ia.jpg",
   "w": 2400,
   "h": 2225,
-  "era": "sun-solar"
+  "era": "sun-solar",
+  "s5": {
+   "pt": [
+    0.50572,
+    0.42776
+   ],
+   "r": 0.10599
+  }
  },
  "universal-sundial-engraving-wellcome": {
   "file": "assets/processed/sun-solar/sun-solar-universal-sundial-engraving-wellcome.jpg",
