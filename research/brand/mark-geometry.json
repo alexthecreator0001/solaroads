@@ -1,0 +1,245 @@
+{
+ "box": [
+  449,
+  449
+ ],
+ "units": "SVG user units of assets/solaro-mark.svg (y down). solaro-logo.svg uses the same mark at the same coordinates.",
+ "grid": {
+  "cell": 204.092,
+  "gap": 40.816,
+  "gap_over_cell": 0.2,
+  "col_x": [
+   0,
+   244.908
+  ],
+  "row_y": [
+   0,
+   244.905
+  ],
+  "centre": [
+   224.5,
+   224.5
+  ]
+ },
+ "primitive": "Every shape = a CxC cell with per-corner radii [tl,tr,br,bl] (0..R) and an optional centred hole (2r x 2r) with its own per-corner radii. All arcs are circular (cubic handle = 0.5523*radius).",
+ "shapes": {
+  "ring_TL": {
+   "cell_origin": [
+    0.023,
+    0
+   ],
+   "radii": [
+    102.046,
+    102.046,
+    102.046,
+    102.046
+   ],
+   "hole": {
+    "r": 48.921,
+    "radii": [
+     48.921,
+     48.921,
+     48.921,
+     48.921
+    ]
+   },
+   "centre": [
+    102.07,
+    102.046
+   ],
+   "note": "annulus; band = 53.125"
+  },
+  "quarter_TR": {
+   "cell_origin": [
+    244.836,
+    0.013
+   ],
+   "radii": [
+    0,
+    23.753,
+    0,
+    102.046
+   ],
+   "hole": null,
+   "note": "big quarter-circle corner (centre 346.882,102.059) faces the mark centre; small r 23.753 at outer corner"
+  },
+  "quarter_BL": {
+   "cell_origin": [
+    0,
+    244.905
+   ],
+   "radii": [
+    0,
+    102.046,
+    0,
+    23.753
+   ],
+   "hole": null,
+   "note": "TR corner R (centre 102.046,346.951) faces centre; BL corner r 23.753. = quarter_TR rotated 180 deg"
+  },
+  "pin_BR": {
+   "cell_origin": [
+    244.908,
+    244.896
+   ],
+   "radii": [
+    102.046,
+    102.046,
+    28.237,
+    102.046
+   ],
+   "hole": {
+    "r": 48.922,
+    "radii": [
+     48.922,
+     48.922,
+     0,
+     48.922
+    ]
+   },
+   "centre": [
+    346.954,
+    346.943
+   ],
+   "note": "circle with BR quadrant squared (outer corner r 28.237, hole corner sharp at 395.876,395.865); reads as a map pin / teardrop / the wordmark 'a'"
+  }
+ },
+ "model_iou_vs_svg": {
+  "ring_TL": 0.99731,
+  "quarter_BL": 0.99831,
+  "quarter_TR": 0.99824,
+  "pin_BR": 0.99694
+ },
+ "fill": {
+  "type": "linear vertical gradient per shape bbox",
+  "stops": [
+   [
+    "0%",
+    "#FF5E2B"
+   ],
+   [
+    "100%",
+    "#FF3D00"
+   ]
+  ],
+  "live_site_logo": "flat #FF5E2B, no effects"
+ },
+ "effects": {
+  "per_shape_inner_shadow": {
+   "dx": 0,
+   "dy": 1.415,
+   "blur_stddev": 4.174,
+   "color": "#000000",
+   "opacity": 0.25
+  },
+  "group_inner_shadow": {
+   "erode": 4,
+   "dx": 2,
+   "dy": 3,
+   "blur_stddev": 2.95,
+   "color": "#000000",
+   "opacity": 0.25,
+   "note": "thin dark rim on top/left inner edges -> slightly debossed look"
+  }
+ },
+ "lockup_solaro_logo_svg": {
+  "viewBox": [
+   1866,
+   449
+  ],
+  "mark": [
+   0,
+   0,
+   449,
+   449
+  ],
+  "mark_to_S_gap": 88.0,
+  "baseline_y": 375.372,
+  "text_block_centre_y": 224.5,
+  "note": "(l-top 68 + o-bottom 381)/2 = 224.5 = mark centre: wordmark is vertically centred on the mark",
+  "live_site_variant": "logo-3.svg (2157x477): same shapes, mark 476.5 tall, wordmark ~9.7% larger relative to mark, gap 133.5 (=126 at 449 scale), baseline 413.46 (=389.6 at 449 scale)"
+ },
+ "wordmark": {
+  "fill": "#1C1C1C",
+  "baseline": 375.372,
+  "x_height_round": 219.49,
+  "x_height_flat_est": 213.9,
+  "overshoot": 5.63,
+  "cap_height_S_incl_overshoot": 288.76,
+  "cap_height_flat_est": 283.1,
+  "ascender_l": 307.372,
+  "letters": {
+   "S": {
+    "x0": 537.0,
+    "y0": 86.62,
+    "x1": 750.0,
+    "y1": 381.0,
+    "w": 213.0,
+    "h": 294.38,
+    "subpaths": 1
+   },
+   "o": {
+    "x0": 776.26,
+    "y0": 155.88,
+    "x1": 1006.57,
+    "y1": 381.0,
+    "w": 230.31,
+    "h": 225.12,
+    "subpaths": 2
+   },
+   "l": {
+    "x0": 1047.2,
+    "y0": 68.0,
+    "x1": 1112.14,
+    "y1": 375.37,
+    "w": 64.94,
+    "h": 307.37,
+    "subpaths": 1
+   },
+   "a": {
+    "x0": 1152.95,
+    "y0": 155.88,
+    "x1": 1382.39,
+    "y1": 381.0,
+    "w": 229.44,
+    "h": 225.12,
+    "subpaths": 2
+   },
+   "r": {
+    "x0": 1424.99,
+    "y0": 155.88,
+    "x1": 1617.21,
+    "y1": 375.37,
+    "w": 192.22,
+    "h": 219.49,
+    "subpaths": 1
+   },
+   "o2": {
+    "x0": 1634.91,
+    "y0": 155.88,
+    "x1": 1865.22,
+    "y1": 381.0,
+    "w": 230.31,
+    "h": 225.12,
+    "subpaths": 2
+   }
+  },
+  "gaps_between_letters": {
+   "S-o": 26.26,
+   "o-l": 40.63,
+   "l-a": 40.81,
+   "a-r": 42.6,
+   "r-o": 17.7
+  },
+  "strokes": {
+   "l_stem": 64.94,
+   "r_stem": 64.94,
+   "o_vertical": 65.8,
+   "o_horizontal": 60.61,
+   "a_bowl_left": 65.8,
+   "a_stem_foot": 59.74,
+   "S_horizontal_arcs": 60.18
+  },
+  "construction": "Poppins Bold (700) skeleton: S/o/l match Poppins Bold at font-size 392.2 units (S drawn ~4% taller, l ~6% taller). 'a' and 'r' are custom: 'a' = single-storey bowl whose right side rounds over the top (no square shoulder) into a stem with flat foot; 'r' = full arch (n-shape) whose right leg is cut horizontally at y=254.2-255.5 (terminal 64.9 wide)."
+ }
+}
