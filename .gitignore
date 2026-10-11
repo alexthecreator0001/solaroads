@@ -11,3 +11,5 @@ out/
 assets/processed/
 research/reference/audio.wav
 fonts/_test/
+audio/*.wav
+audio/cues_*.json
