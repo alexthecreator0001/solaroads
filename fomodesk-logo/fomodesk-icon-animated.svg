@@ -1,0 +1,50 @@
+<svg class="fdi" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .fdi *{transform-origin:0 0}
+  .fdi .fdi-tile{transform-origin:100px 100px;animation:fdi-pop .55s cubic-bezier(.22,1,.36,1) both}
+  .fdi-in{animation:fdi-in .8s cubic-bezier(.16,1,.3,1) both}
+  .fdi-str{animation:fdi-str .8s cubic-bezier(.16,1,.3,1) both}
+  .fdi-bob{animation:fdi-bob 3s ease-in-out infinite both}
+  .fdi-str2{animation:fdi-str2 3s ease-in-out infinite both}
+  .fdi-o{animation-delay:.15s}
+  .fdi-g{animation-delay:.3s}
+  .fdi-bob.fdi-o,.fdi-str2.fdi-o{animation-delay:1.1s}
+  .fdi-bob.fdi-g,.fdi-str2.fdi-g{animation-delay:1.6s}
+  @keyframes fdi-pop{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
+  @keyframes fdi-in{from{transform:translate(-159px,84px)}to{transform:none}}
+  @keyframes fdi-str{from{transform:scaleX(4)}to{transform:none}}
+  @keyframes fdi-bob{0%,100%{transform:none}50%{transform:translate(2.65px,-1.4px)}}
+  @keyframes fdi-str2{0%,100%{transform:none}50%{transform:scaleX(1.3)}}
+  @media (prefers-reduced-motion:reduce){.fdi *{animation:none!important}}
+</style>
+<defs>
+  <linearGradient id="fdi-og" x1="90" y1="54" x2="52.5" y2="54" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#FF3D00"/><stop offset="1" stop-color="#FF3D00" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="fdi-gg" x1="138" y1="24" x2="103.5" y2="24" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#60E632"/><stop offset="1" stop-color="#60E632" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="fdi-clip"><rect width="200" height="200" rx="28"/></clipPath>
+</defs>
+<g class="fdi-tile">
+  <g clip-path="url(#fdi-clip)">
+    <rect width="200" height="200" rx="28" fill="black"/>
+    <g class="fdi-in fdi-g"><g class="fdi-bob fdi-g">
+      <path d="M137.5 47H148.5V108H137.5V131H129.5V108H118.5V47H129.5V24H137.5V47Z" fill="#60E632"/>
+      <g transform="translate(129.5 0) matrix(1 -0.5291667 0 1 0 0)">
+      <g class="fdi-str fdi-g"><g class="fdi-str2 fdi-g">
+        <path transform="matrix(1 0.5291667 0 1 0 0) translate(-129.5 0)" d="M9.5 87.5L129.5 24V131L9.5 194.5V87.5Z" fill="url(#fdi-gg)"/>
+      </g></g>
+    </g>
+    </g></g>
+    <g class="fdi-in fdi-o"><g class="fdi-bob fdi-o">
+      <g transform="translate(81.5 0) matrix(1 -0.5269710 0 1 0 0)">
+      <g class="fdi-str fdi-o"><g class="fdi-str2 fdi-o">
+        <path transform="matrix(1 0.5269710 0 1 0 0) translate(-81.5 0)" d="M-39 117.5L81.5 54V161L-39 224.5V117.5Z" fill="url(#fdi-og)"/>
+      </g></g>
+    </g>
+      <path d="M89.5 77H100.5V138H89.5V161H81.5V138H70.5V77H81.5V54H89.5V77Z" fill="#FF3D00"/>
+    </g></g>
+  </g>
+</g>
+</svg>
