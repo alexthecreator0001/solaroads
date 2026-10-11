@@ -1,0 +1,120 @@
+{
+ "franklin-kite-currier-ives-loc-s3": {
+  "focus": [
+   0.45,
+   0.5
+  ]
+ },
+ "bolt-spokane-1914-loc-s3inv": {
+  "focus": [
+   0.62,
+   0.5
+  ]
+ },
+ "kite-romas-1753-figuier-s3": {
+  "focus": [
+   0.55,
+   0.5
+  ]
+ },
+ "bolt-jennings-1882-loc-s3inv": {
+  "focus": [
+   0.86,
+   0.5
+  ]
+ },
+ "strike-building-engraving-wellcome-s3": {
+  "focus": [
+   0.62,
+   0.5
+  ]
+ },
+ "richmann-killed-engraving-wellcome-s3": {
+  "focus": [
+   0.6,
+   0.5
+  ]
+ },
+ "suspended-boy-hausen-wellcome-s3": {
+  "focus": [
+   0.4,
+   0.5
+  ]
+ },
+ "gray-wheler-1729-figuier-s3": {
+  "focus": [
+   0.75,
+   0.5
+  ]
+ },
+ "leyden-nollet-spark-wellcome-s3": {
+  "focus": [
+   0.555,
+   0.555
+  ],
+  "zoom": 1.2
+ },
+ "leyden-jar-battery-smithsonian-s3": {
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "zoom": 1.0
+ },
+ "volta-pile-original-wellcome-s3": {
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "zoom": 1.0
+ },
+ "galvani-frog-hand-arc-wellcome-s3": {
+  "focus": [
+   0.45,
+   0.6
+  ],
+  "zoom": 1.0
+ },
+ "machine-cuthbertson-disc-wellcome-s3": {
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "zoom": 1.14
+ },
+ "machine-guericke-sulfur-globe-wellcome-s3": {
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "zoom": 1.0
+ },
+ "leyden-battery-64-jars-wellcome-s3": {
+  "focus": [
+   0.45,
+   0.4
+  ],
+  "zoom": 1.2
+ },
+ "machine-hauksbee-wellcome-s3": {
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "zoom": 1.14
+ },
+ "volta-pile-griffin-wellcome-s3": {
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "zoom": 1.0
+ },
+ "leyden-jars-three-galvani-wellcome-s3": {
+  "focus": [
+   0.5,
+   0.55
+  ],
+  "zoom": 1.0
+ }
+}
